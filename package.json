@@ -1,7 +1,7 @@
 {
-  "name": "Jellewery",
+  "name": "Jewellery",
   "version": "1.0.0",
-  "description": "Jellewery",
+  "description": "Jewellery",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "9.5.x",

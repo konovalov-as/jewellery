@@ -1,8 +1,8 @@
-# Jellewery
+# Jewellery
 
 Интернет-магазин ювелирных украшений. Проект выполнен в рамках Акселератора после обучения в HTML Academy.
 
-- Опубликованная версия: [Израиль](https://konovalov-as.github.io/jellewery/).
+- Опубликованная версия: [Jewellery](https://konovalov-as.github.io/jewellery/).
 
 ## Краткая инструкция по работе
 
