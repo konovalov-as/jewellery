@@ -1,3 +1,22 @@
-body {
-  background-color: red;
-}
+// global styles
+@import "global/variables.scss";
+@import "global/normalize.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "blocks/container";
+
+// header
+@import "blocks/page-header.scss";
+
+// titles
+@import "blocks/title-h2.scss";
+@import "blocks/title-h3.scss";
+
+// blocks style
+@import "blocks/page-main.scss";
+
+// footer
+@import "blocks/page-footer.scss";
+
+// modal
+@import "blocks/modal.scss";
