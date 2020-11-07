@@ -18,6 +18,8 @@ var del = require("del");
 var htmlValidator = require('gulp-w3c-html-validator');
 var ghPages = require('gulp-gh-pages');
 var concat = require('gulp-concat');
+var ttf2woff = require('gulp-ttf2woff');
+var ttf2woff2 = require('gulp-ttf2woff2');
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -32,6 +34,20 @@ gulp.task("css", function () {
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
+
+gulp.task("ttf2woff", function () {
+  return gulp.src("source/fonts/*.ttf")
+    .pipe(ttf2woff())
+    .pipe(gulp.dest("build/fonts/"));
+});
+
+gulp.task("ttf2woff2", function () {
+  return gulp.src("source/fonts/*.ttf")
+    .pipe(ttf2woff2())
+    .pipe(gulp.dest("build/fonts/"));
+});
+
+gulp.task("fonts", gulp.parallel("ttf2woff", "ttf2woff2"));
 
 gulp.task("scripts", function() {
   return gulp.src("source/js/lib/*.js")
@@ -100,7 +116,7 @@ gulp.task("html-validator", async function () {
 
 gulp.task("copy", function () {
   return gulp.src([
-    "source/fonts/**/*.{woff,woff2}",
+    // "source/fonts/**/*.{woff,woff2}",
     "source//*.ico"
   ], {
     base: "source"
@@ -117,5 +133,5 @@ gulp.task("deploy", function () {
     .pipe(ghPages());
 });
 
-gulp.task("build", gulp.series("clean", "copy", "css", "scripts", "images", "webp", "sprite", "html"));
+gulp.task("build", gulp.series("clean", "copy", "css", "scripts", "images", "webp", "sprite", "fonts", "html"));
 gulp.task("start", gulp.series("build", "server"));
