@@ -16,10 +16,11 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var htmlValidator = require('gulp-w3c-html-validator');
-var ghPages = require('gulp-gh-pages');
-var concat = require('gulp-concat');
-var ttf2woff = require('gulp-ttf2woff');
-var ttf2woff2 = require('gulp-ttf2woff2');
+var ghPages = require("gulp-gh-pages");
+var concat = require("gulp-concat");
+var ttf2woff = require("gulp-ttf2woff");
+var ttf2woff2 = require("gulp-ttf2woff2");
+var pug = require("gulp-pug");
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
@@ -48,6 +49,13 @@ gulp.task("ttf2woff2", function () {
 });
 
 gulp.task("fonts", gulp.parallel("ttf2woff", "ttf2woff2"));
+
+gulp.task("views", function buildHTML() {
+  return gulp.src("views/*.pug")
+  .pipe(pug({
+    // Your options in here.
+  }))
+});
 
 gulp.task("scripts", function() {
   return gulp.src("source/js/lib/*.js")
