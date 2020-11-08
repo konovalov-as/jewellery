@@ -7,13 +7,95 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Online shopping jewellery">
   <meta name="Keywords" content="Jewellery, wedding, engagement rings, necklaces, earrings, bracelets, body jewelry">
-  <title>Chjewellery - Online shopping jewellery</title>
+  <title>Chjewellery - Online shopping jewellery made to be yours</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="body">
-  <header class="page-header">
+  <header class="page-header container">
+    <div class="page-header__wrapper">
+      <nav class="page-header__menu main-nav main-nav--closed about-us user-menu user-cart">
+        <!-- <div class="page-header_top"> -->
+        <div class="page-header__search search">
+          <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
+            <!-- <div> -->
+              <label>
+                <span class="visually-hidden">Search the website</span>
+                <input type="text" name="search" id="search" placeholder="Type here to search" required="">
+              </label>
+            <!-- </div> -->
+            <button type="submit">
+              <span class="visually-hidden">Search</span>
+              <svg width="14" height="14">
+                <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+        <a class="page-header__logo">
+          <img src="img/logo.svg" alt="Chjewellery - The Jewellery Store" width="66" height="66">
+        </a>
+        <button class="page-header__menu-toggle main-menu-toggle" type="button">
+          <span class="visually-hidden">Open the main menu</span>
+          <span class="main-menu-toggle__icon">
+            <svg width="25" height="16">
+              <use xlink:href="img/sprite_auto.svg#icon-toggle-menu"></use>
+            </svg>
+          </span>
+        </button>
+        <!-- </div> -->
 
+        <ul class="main-nav__list main-nav__list--index">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">What’s new</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Chokers</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Necklaces</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Rings</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Earrings</a>
+          </li>
+        </ul>
+
+        <ul class="main-nav__list about-us__list about-us__list--desktop">
+          <li class="about-us__item">
+            <a class="about-us__link" href="#">About CH</a>
+          </li>
+          <li class="about-us__item">
+            <a class="about-us__link" href="#">Stores & Hours</a>
+          </li>
+          <li class="about-us__item">
+            <a class="about-us__link" href="#">Contact Us</a>
+          </li>
+        </ul>
+
+        <ul class="main-nav__list user-menu__list">
+          <li class="user-menu__item">
+            <a class="user-menu__link" href="#">Login</a>
+          </li>
+        </ul>
+
+        <ul class="main-nav__list user-cart__list">
+          <li class="user-menu__item">
+            <a class="user-menu__link" href="#" aria-label="User cart">
+              <span class="user-menu__link-label">Cart</span>
+              <span class="user-menu__link-value">0</span>
+              <svg width="18" height="16">
+                <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+      </nav>
+
+    </div>
   </header>
 
   <main class="page-main">
@@ -53,9 +135,9 @@
   </section>
 
   <!-- Различные библиотеки -->
-  <script src="js/vendor.js"></script>
+  <!-- <script src="js/vendor.js"></script> -->
 
-  <script>svg4everybody(); // run it now or whenever you are ready</script>
+  <!-- <script>svg4everybody(); // run it now or whenever you are ready</script> -->
   <script src="js/main.js"></script>
 
 </body>
