@@ -432,9 +432,6 @@ input[type="radio"].visually-hidden {
   height: 66px; }
 
 @media (max-width: 1023px) {
-  .page-header__wrapper {
-    margin-left: 0px;
-    margin-right: 0px; }
   .page-header__search {
     margin-right: 0; }
   .page-header__logo {
