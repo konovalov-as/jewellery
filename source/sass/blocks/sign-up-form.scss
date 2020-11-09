@@ -1,0 +1,81 @@
+.sign-up-form {
+  border-bottom: 1px solid white;
+}
+
+.sign-up-form input {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  background-color: transparent;
+  border: none;
+  color: #9b9997;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-right: 15px;
+
+  &:hover,
+  &:focus {
+    color: #a87b62;
+  }
+
+  &:active {
+    color: #9b9997;
+  }
+}
+
+.sign-up-form button {
+  font-weight: 500;
+  line-height: 21px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #a87b62;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    stroke: #a87b62;
+  }
+
+  &:active {
+    color: #9b9997;
+  }
+
+  &:active svg {
+    stroke: #9b9997;
+  }
+}
+
+.sign-up-form svg {
+  width: 29px;
+  height: 9px;
+  stroke: white;
+  transform: rotate(180deg);
+}
+
+@media (max-width: $tablet-width-only) {
+  .sign-up-form {
+    display: flex;
+    max-width: 560px;
+    justify-content: space-between;
+  }
+
+  .sign-up-form label {
+    width: 70%;
+    display: flex;
+  }
+
+  .sign-up-form input {
+    width: 100%;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .sign-up-form {
+  }
+}

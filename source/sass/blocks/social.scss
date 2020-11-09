@@ -1,0 +1,41 @@
+.social__item {
+  margin-bottom: 20px;
+}
+
+.social__link {
+  display: flex;
+  font-weight: 500;
+  line-height: 21px;
+  color: white;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: #a87b62;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: #9b9997;
+  }
+
+  &:hover svg,
+  &:focus svg {
+    fill: #a87b62;
+  }
+
+  &:active svg {
+    fill: #9b9997;
+  }
+}
+
+.social__link svg {
+  order: -1;
+  margin-right: 15px;
+  fill: white;
+}
+
+.social__label--fb + svg {
+  width: 8px;
+  height: 15px;
+}
