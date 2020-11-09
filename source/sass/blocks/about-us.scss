@@ -21,8 +21,27 @@
 
 @media (max-width: $tablet-width-only) {
   .about-us__list {
-    display: block;
+    display: none;
     width: 100%;
-    order: 6;
+    order: -2;
+    margin-bottom: 40px;
+  }
+
+  .about-us__item {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .about-us__link {
+    color: white;
+
+    &:hover,
+    &:focus {
+      color: $base-color;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.7);
+    }
   }
 }

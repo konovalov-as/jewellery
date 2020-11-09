@@ -1,14 +1,10 @@
-.search {
-  // margin-right: 32.7%;
-}
-
 .search__form {
   display: flex;
   align-items: flex-end;
 }
 
 .search__form label {
-  // width: 100%;
+  width: 100%;
 }
 
 .search__form input {
@@ -55,9 +51,8 @@
 
 @media (max-width: $tablet-width-only) {
   .search {
-    display: block;
+    display: none;
     width: 100%;
-    order: 4;
   }
 
   .search__form {
@@ -66,6 +61,7 @@
   }
 
   .search__form input {
+    max-width: 100%;
     width: 100%;
   }
 }

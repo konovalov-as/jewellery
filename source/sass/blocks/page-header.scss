@@ -1,12 +1,29 @@
-.page-header {
+.page-header--bg {
+  background-color: #a87b62;
 }
 
-.page-header__wrapper {
+.page-header--bg .main-menu-toggle__svg-icon {
+  stroke: white;
+
+  &:hover,
+  &:focus {
+    stroke: white;
+  }
+}
+
+.page-header--bg .main-menu-toggle__icon {
+  &:hover .main-menu-toggle__svg-icon,
+  &:focus .main-menu-toggle__svg-icon {
+    stroke: $base-color;
+  }
+
+  &:active .main-menu-toggle__svg-icon {
+    stroke: rgba(0, 0, 0, 0.5);
+  }
 }
 
 .page-header__menu {
   display: flex;
-  // justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   padding-top: 30px;
@@ -14,24 +31,106 @@
 
 .page-header__search {
   margin-right: 32.7%;
+  order: -5;
 }
 
 .page-header__logo {
   margin-right: 37%;
+  order: -4;
+}
+
+.page-header--bg .page-header__svg-logo {
+  fill: white;
+}
+
+.page-header__svg-logo {
+  fill: #a87b62;
   width: 66px;
   height: 66px;
 }
 
+.page-header--bg .user-menu__icon {
+  stroke: white;
+
+  &:hover,
+  &:focus {
+    stroke: $base-color;
+  }
+
+  &:active {
+    stroke: rgba(0, 0, 0, 0.7);
+  }
+}
+
+.page-header--bg .search__form {
+  margin-top: 40px;
+  margin-bottom: 55px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 21px;
+}
+
+.page-header--bg .search__form input {
+  background-color: transparent;
+  color: white;
+
+  &:hover,
+  &:focus {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.page-header--bg .search__form svg {
+  fill: white;
+
+  &:hover,
+  &:focus {
+    fill: $base-color;
+  }
+
+  &:active {
+    fill: rgba(0, 0, 0, 0.7);
+  }
+}
+
+.page-header--bg .main-nav__list {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-top: none;
+  border-bottom: none;
+}
+
+.page-header__menu-toggle {
+  order: -7;
+}
+
+.page-header__list {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 @media (max-width: $tablet-width-only) {
-  .page-header__wrapper {
+  .page-header__menu {
+    padding-bottom: 80px;
   }
 
   .page-header__search {
     margin-right: 0;
+    order: -4;
   }
 
   .page-header__logo {
     margin-right: 42.4%;
+    order: -6;
   }
 
   .page-header__menu-toggle {
@@ -42,6 +141,9 @@
 @media (max-width: $mobile-width-only) {
   .page-header__logo {
     margin-right: 34.83%;
+  }
+
+  .page-header__svg-logo {
     width: 52px;
     height: 52px;
   }

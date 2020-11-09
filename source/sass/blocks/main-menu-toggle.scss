@@ -5,23 +5,22 @@
 @media (max-width: $tablet-width-only) {
   .main-menu-toggle {
     display: block;
-    order: -1;
     border: none;
     background-color: transparent;
     padding: 0;
     cursor: pointer;
 
-    &:hover svg,
-    &:focus svg {
+    &:hover .main-menu-toggle__svg-icon,
+    &:focus .main-menu-toggle__svg-icon {
       stroke: #a87b62;
     }
 
-    &:active svg {
+    &:active .main-menu-toggle__svg-icon {
       stroke: rgba(0, 0, 0, 0.7);
     }
   }
 
-  .main-menu-toggle__icon svg {
+  .main-menu-toggle__svg-icon {
     width: 25px;
     height: 16px;
     stroke: $base-color;

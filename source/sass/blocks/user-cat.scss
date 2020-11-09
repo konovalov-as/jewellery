@@ -1,0 +1,9 @@
+.user-cart__list {
+  order: -2;
+}
+
+@media (max-width: $tablet-width-only) {
+  .user-cart__list {
+    order: -5;
+  }
+}

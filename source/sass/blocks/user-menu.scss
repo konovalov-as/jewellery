@@ -1,5 +1,6 @@
 .user-menu__list {
   margin-right: 3%;
+  order: -3;
 }
 
 .user-menu__link {
@@ -17,11 +18,11 @@
   &:active {
     color: rgba(0, 0, 0, 0.7);
   }
+}
 
-  svg {
-    fill: transparent;
-    display: none;
-  }
+.user-menu__icon {
+  fill: transparent;
+  display: none;
 }
 
 .user-menu__link-label {
@@ -30,13 +31,13 @@
 
 @media (max-width: $tablet-width-only) {
   .user-menu__list {
-    // display: none;
-    order: 7;
+    display: none;
+    order: -1;
     width: 100%;
     margin-right: 0;
   }
 
-  .user-menu__link svg {
+  .user-menu__icon {
     display: block;
     width: 18px;
     height: 16px;
@@ -49,6 +50,19 @@
 
     &:active {
       stroke: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  .user-menu__link {
+    color: white;
+
+    &:hover,
+    &:focus {
+      color: $base-color;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.7);
     }
   }
 
