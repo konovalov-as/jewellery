@@ -1,2 +1,35 @@
 .title-h2 {
+  font-family: $alternative-1-font-family;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 44px;
+  text-align: center;
+  color: $base-color;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.title-h2--hero {
+  font-size: 45px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 180px;
+  text-transform: uppercase;
+}
+
+@media (max-width: $tablet-width-only) {
+  .title-h2 {
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .title-h2 {
+  }
+
+  .title-h2--hero {
+    font-size: 38px;
+    line-height: 49px;
+  }
 }

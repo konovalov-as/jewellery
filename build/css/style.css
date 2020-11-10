@@ -794,6 +794,30 @@ input[type="radio"].visually-hidden {
         -ms-flex-order: -5;
             order: -5; } }
 
+.title-h2 {
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 44px;
+  text-align: center;
+  color: #1d1613;
+  margin-top: 0;
+  margin-bottom: 35px; }
+
+.title-h2--hero {
+  font-size: 45px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 180px;
+  text-transform: uppercase; }
+
+@media (max-width: 767px) {
+  .title-h2--hero {
+    font-size: 38px;
+    line-height: 49px; } }
+
 .body {
   min-width: 320px;
   font-family: "Poppins", "Arial", sans-serif;
@@ -803,6 +827,54 @@ input[type="radio"].visually-hidden {
   font-style: normal;
   line-height: normal;
   letter-spacing: normal; }
+
+.page-hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 463px;
+  margin-bottom: 130px;
+  background-color: #614233;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../img/bg-hero-desktop-index@1x.jpg"); }
+  @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .page-hero {
+      background-image: url("../img/bg-hero-desktop-index@2x.jpg"); } }
+
+.page-hero__slogan {
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-style: italic;
+  font-size: 38px;
+  line-height: 49px;
+  text-align: center;
+  color: white;
+  margin-top: 0;
+  margin-bottom: 20px; }
+
+@media (max-width: 1023px) {
+  .page-hero {
+    background-image: url("../img/bg-hero-tablet-index@1x.jpg"); } }
+  @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 1023px) and (min-resolution: 144dpi), (max-width: 1023px) and (min-resolution: 1.5dppx) {
+    .page-hero {
+      background-image: url("../img/bg-hero-tablet-index@2x.jpg"); } }
+
+@media (max-width: 767px) {
+  .page-hero {
+    background-image: url("../img/bg-hero-mobile-index@1x.jpg"); } }
+  @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 1.5), (max-width: 767px) and (min-resolution: 144dpi), (max-width: 767px) and (min-resolution: 1.5dppx) {
+    .page-hero {
+      background-image: url("../img/bg-hero-mobile-index@2x.jpg"); } }
+
+@media (max-width: 767px) {
+  .page-hero__slogan {
+    font-size: 34px;
+    line-height: 44px; } }
 
 .page-footer {
   color: white;
