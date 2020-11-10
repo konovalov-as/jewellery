@@ -12,125 +12,206 @@
 </head>
 
 <body class="body">
-  <header class="page-header">
-    <div class="page-header__wrapper container">
-      <nav class="page-header__menu main-nav main-nav--closed about-us user-menu user-cart">
-        <div class="page-header__search search">
-          <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
+  <div class="wrapper">
+    <header class="page-header">
+      <div class="page-header__wrapper container">
+        <nav class="page-header__menu main-nav main-nav--closed about-us user-menu user-cart">
+          <div class="page-header__search search">
+            <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
+              <label>
+                <span class="visually-hidden">Search the website</span>
+                <input type="text" name="search" id="search" placeholder="Type here to search" required="">
+              </label>
+              <button type="submit">
+                <span class="visually-hidden">Search</span>
+                <svg width="14" height="14">
+                  <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+          <a class="page-header__logo" href="index.html">
+            <span class="visually-hidden">Chjewellery - The Jewellery Store</span>
+            <svg class="page-header__svg-logo" width="66" height="66">
+              <use xlink:href="img/sprite_auto.svg#logo"></use>
+            </svg>
+          </a>
+          <button class="page-header__menu-toggle main-menu-toggle" type="button">
+            <span class="visually-hidden">Open the main menu</span>
+            <span class="main-menu-toggle__icon">
+              <svg class="main-menu-toggle__svg-icon" width="25" height="16">
+                <use xlink:href="img/sprite_auto.svg#icon-toggle-menu"></use>
+              </svg>
+            </span>
+          </button>
+
+          <ul class="page-header__list main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">What’s new</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Chokers</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Necklaces</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Rings</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Earrings</a>
+            </li>
+          </ul>
+
+          <ul class="page-header__list about-us__list about-us__list--desktop">
+            <li class="about-us__item">
+              <a class="about-us__link" href="#">About CH</a>
+            </li>
+            <li class="about-us__item">
+              <a class="about-us__link" href="#">Stores & Hours</a>
+            </li>
+            <li class="about-us__item">
+              <a class="about-us__link" href="#">Contact Us</a>
+            </li>
+          </ul>
+
+          <ul class="page-header__list user-menu__list">
+            <li class="user-menu__item">
+              <a class="user-menu__link" href="#">Login</a>
+            </li>
+          </ul>
+
+          <ul class="page-header__list user-cart__list">
+            <li class="user-menu__item">
+              <a class="user-menu__link" href="#" aria-label="User cart">
+                <span class="user-menu__link-label">Cart</span>
+                <span class="user-menu__link-value">0</span>
+                <svg class="user-menu__icon" width="18" height="16">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Chjewellery - Online shopping jewellery</h1>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper container">
+        <div class="page-footer__left">
+          <p class="page-footer__title">The good stuff in your inbox </p>
+          <p class="page-footer__description">News and updates from CH. No spam, we promise.</p>
+          <form class="sign-up-form" action="https://echo.htmlacademy.ru" method="post">
             <label>
-              <span class="visually-hidden">Search the website</span>
-              <input type="text" name="search" id="search" placeholder="Type here to search" required="">
+              <span class="visually-hidden"></span>
+              <input type="email" name="email" id="email" placeholder="Your E-mail" required="">
             </label>
             <button type="submit">
-              <span class="visually-hidden">Search</span>
-              <svg width="14" height="14">
-                <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+              <span>Sign Up</span>
+              <svg width="29" height="9">
+                <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
               </svg>
             </button>
           </form>
         </div>
-        <a class="page-header__logo" href="index.html">
-          <span class="visually-hidden">Chjewellery - The Jewellery Store</span>
-          <svg class="page-header__svg-logo" width="66" height="66">
-            <use xlink:href="img/sprite_auto.svg#logo"></use>
-          </svg>
-        </a>
-        <button class="page-header__menu-toggle main-menu-toggle" type="button">
-          <span class="visually-hidden">Open the main menu</span>
-          <span class="main-menu-toggle__icon">
-            <svg class="main-menu-toggle__svg-icon" width="25" height="16">
-              <use xlink:href="img/sprite_auto.svg#icon-toggle-menu"></use>
-            </svg>
-          </span>
+        <div class="page-footer__right social">
+          <ul class="page-footer__list-1">
+            <li class="page-footer__item-1">
+              <a class="page-footer__link-1" href="#">Ordering & Payment</a>
+            </li>
+            <li class="page-footer__item-1">
+              <a class="page-footer__link-1" href="#">Terms & Conditions</a>
+            </li>
+            <li class="page-footer__item-1">
+              <a class="page-footer__link-1" href="#">Returns & Exchanges</a>
+            </li>
+            <li class="page-footer__item-1">
+              <a class="page-footer__link-1" href="#">Delivery</a>
+            </li>
+          </ul>
+          <ul class="page-footer__list-2">
+            <li class="page-footer__item-2">
+              <a class="page-footer__link-2" href="#">About CH</a>
+            </li>
+            <li class="page-footer__item-2">
+              <a class="page-footer__link-2" href="#">Stores & Hours</a>
+            </li>
+            <li class="page-footer__item-2">
+              <a class="page-footer__link-2" href="#">Jobs</a>
+            </li>
+            <li class="page-footer__item-2">
+              <a class="page-footer__link-2" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <ul class="page-footer__list-3 social__list">
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="social__label social__label--fb">Facebook</span>
+                <svg width="8" height="15">
+                  <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="social__label social__label--instagram">Instagram</span>
+                <svg width="15" height="15">
+                  <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="social__label social__label--pinterest">Pinterest</span>
+                <svg width="15" height="15">
+                  <use xlink:href="img/sprite_auto.svg#icon-pinterest"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="social__label social__label--twitter">Twitter</span>
+                <svg width="15" height="13">
+                  <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <section class="modal">
+      <div class="modal__content">
+        <h3 class="modal__title"></h3>
+        <p class="modal__text">
+
+        </p>
+        <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
+
+        </form>
+        <button class="modal__close" type="button">
+          <span class="visually-hidden">Закрыть</span>
         </button>
+      </div>
+    </section>
 
-        <ul class="page-header__list main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">What’s new</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Chokers</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Necklaces</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Rings</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Earrings</a>
-          </li>
-        </ul>
+    <section class="modal">
+      <div class="modal__content">
+        <h3 class="modal__title"></h3>
+        <p class="modal__success-text">
 
-        <ul class="page-header__list about-us__list about-us__list--desktop">
-          <li class="about-us__item">
-            <a class="about-us__link" href="#">About CH</a>
-          </li>
-          <li class="about-us__item">
-            <a class="about-us__link" href="#">Stores & Hours</a>
-          </li>
-          <li class="about-us__item">
-            <a class="about-us__link" href="#">Contact Us</a>
-          </li>
-        </ul>
+        </p>
 
-        <ul class="page-header__list user-menu__list">
-          <li class="user-menu__item">
-            <a class="user-menu__link" href="#">Login</a>
-          </li>
-        </ul>
-
-        <ul class="page-header__list user-cart__list">
-          <li class="user-menu__item">
-            <a class="user-menu__link" href="#" aria-label="User cart">
-              <span class="user-menu__link-label">Cart</span>
-              <span class="user-menu__link-value">0</span>
-              <svg class="user-menu__icon" width="18" height="16">
-                <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-    </div>
-  </header>
-
-  <main class="page-main">
-    <h1 class="visually-hidden">Chjewellery - Online shopping jewellery</h1>
-
-  </main>
-
-  <footer class="page-footer container">
-    <div class="page-footer__wrapper">
-
-    </div>
-  </footer>
-
-  <section class="modal">
-    <div class="modal__content">
-      <h3 class="modal__title"></h3>
-      <p class="modal__text">
-
-      </p>
-      <form class="modal__form" action="https://echo.htmlacademy.ru" method="post">
-
-      </form>
-      <button class="modal__close" type="button">
-        <span class="visually-hidden">Закрыть</span>
-      </button>
-    </div>
-  </section>
-
-  <section class="modal">
-    <div class="modal__content">
-      <h3 class="modal__title"></h3>
-      <p class="modal__success-text">
-
-      </p>
-
-    </div>
-  </section>
+      </div>
+    </section>
+  </div>
 
   <!-- Различные библиотеки -->
   <!-- <script src="js/vendor.js"></script> -->

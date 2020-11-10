@@ -39,3 +39,49 @@
   width: 8px;
   height: 15px;
 }
+
+.social__label--instagram + svg {
+  width: 15px;
+  height: 15px;
+}
+
+.social__label--pinterest + svg {
+  width: 15px;
+  height: 15px;
+}
+
+.social__label--twitter + svg {
+  width: 15px;
+  height: 13px;
+}
+
+@media (max-width: $mobile-width-only) {
+  .social__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .social__item {
+    margin-bottom: 10px;
+  }
+
+  .social__label--fb + svg {
+    width: 12px;
+    height: 21px;
+  }
+
+  .social__label--instagram + svg {
+    width: 20px;
+    height: 21px;
+  }
+
+  .social__label--pinterest + svg {
+    width: 20px;
+    height: 21px;
+  }
+
+  .social__label--twitter + svg {
+    width: 20px;
+    height: 18px;
+  }
+}

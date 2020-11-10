@@ -1,4 +1,6 @@
 .sign-up-form {
+  display: flex;
+  justify-content: space-between;
   border-bottom: 1px solid white;
 }
 
@@ -60,9 +62,7 @@
 
 @media (max-width: $tablet-width-only) {
   .sign-up-form {
-    display: flex;
     max-width: 560px;
-    justify-content: space-between;
   }
 
   .sign-up-form label {
@@ -76,6 +76,8 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .sign-up-form {
+  .sign-up-form label {
+    width: 60%;
+    display: flex;
   }
 }

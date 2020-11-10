@@ -888,7 +888,25 @@ input[type="radio"].visually-hidden {
     margin-right: 0;
     margin-bottom: 50px; } }
 
+@media (max-width: 767px) {
+  .page-footer__title {
+    max-width: 220px; }
+  .page-footer__description {
+    max-width: 230px; }
+  .page-footer__right {
+    display: block; }
+  .page-footer__list-1,
+  .page-footer__list-2 {
+    margin-right: 0;
+    margin-bottom: 50px; } }
+
 .sign-up-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-bottom: 1px solid white; }
 
 .sign-up-form input {
@@ -933,13 +951,7 @@ input[type="radio"].visually-hidden {
 
 @media (max-width: 1023px) {
   .sign-up-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    max-width: 560px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between; }
+    max-width: 560px; }
   .sign-up-form label {
     width: 70%;
     display: -webkit-box;
@@ -947,6 +959,13 @@ input[type="radio"].visually-hidden {
     display: flex; }
   .sign-up-form input {
     width: 100%; } }
+
+@media (max-width: 767px) {
+  .sign-up-form label {
+    width: 60%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; } }
 
 .social__item {
   margin-bottom: 20px; }
@@ -980,6 +999,40 @@ input[type="radio"].visually-hidden {
 .social__label--fb + svg {
   width: 8px;
   height: 15px; }
+
+.social__label--instagram + svg {
+  width: 15px;
+  height: 15px; }
+
+.social__label--pinterest + svg {
+  width: 15px;
+  height: 15px; }
+
+.social__label--twitter + svg {
+  width: 15px;
+  height: 13px; }
+
+@media (max-width: 767px) {
+  .social__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .social__item {
+    margin-bottom: 10px; }
+  .social__label--fb + svg {
+    width: 12px;
+    height: 21px; }
+  .social__label--instagram + svg {
+    width: 20px;
+    height: 21px; }
+  .social__label--pinterest + svg {
+    width: 20px;
+    height: 21px; }
+  .social__label--twitter + svg {
+    width: 20px;
+    height: 18px; } }
 
 .modal--open {
   height: 100vh;
