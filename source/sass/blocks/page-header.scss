@@ -11,7 +11,7 @@
   }
 }
 
-.page-header--bg .main-menu-toggle__icon {
+.page-header--bg {
   &:hover .main-menu-toggle__svg-icon,
   &:focus .main-menu-toggle__svg-icon {
     stroke: $base-color;
@@ -54,7 +54,7 @@
 
   &:hover,
   &:focus {
-    stroke: $base-color;
+    stroke: #009ebc;
   }
 
   &:active {

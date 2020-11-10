@@ -449,11 +449,11 @@ input[type="radio"].visually-hidden {
   .page-header--bg .main-menu-toggle__svg-icon:hover, .page-header--bg .main-menu-toggle__svg-icon:focus {
     stroke: white; }
 
-.page-header--bg .main-menu-toggle__icon:hover .main-menu-toggle__svg-icon,
-.page-header--bg .main-menu-toggle__icon:focus .main-menu-toggle__svg-icon {
+.page-header--bg:hover .main-menu-toggle__svg-icon,
+.page-header--bg:focus .main-menu-toggle__svg-icon {
   stroke: #1d1613; }
 
-.page-header--bg .main-menu-toggle__icon:active .main-menu-toggle__svg-icon {
+.page-header--bg:active .main-menu-toggle__svg-icon {
   stroke: rgba(0, 0, 0, 0.5); }
 
 .page-header__menu {
@@ -490,7 +490,7 @@ input[type="radio"].visually-hidden {
 .page-header--bg .user-menu__icon {
   stroke: white; }
   .page-header--bg .user-menu__icon:hover, .page-header--bg .user-menu__icon:focus {
-    stroke: #1d1613; }
+    stroke: #009ebc; }
   .page-header--bg .user-menu__icon:active {
     stroke: rgba(0, 0, 0, 0.7); }
 
@@ -627,7 +627,7 @@ input[type="radio"].visually-hidden {
     cursor: pointer; }
     .main-menu-toggle:hover .main-menu-toggle__svg-icon,
     .main-menu-toggle:focus .main-menu-toggle__svg-icon {
-      stroke: #a87b62; }
+      stroke: #009ebc; }
     .main-menu-toggle:active .main-menu-toggle__svg-icon {
       stroke: rgba(0, 0, 0, 0.7); }
   .main-menu-toggle__svg-icon {
@@ -670,7 +670,8 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   color: #1d1613; }
   .main-nav__link:hover, .main-nav__link:focus {
-    color: #a87b62; }
+    color: #a87b62;
+    text-decoration: underline; }
   .main-nav__link:active {
     color: rgba(0, 0, 0, 0.7); }
 
@@ -744,7 +745,7 @@ input[type="radio"].visually-hidden {
   text-decoration: none;
   color: #1d1613; }
   .user-menu__link:hover, .user-menu__link:focus {
-    color: #a87b62; }
+    color: #009ebc; }
   .user-menu__link:active {
     color: rgba(0, 0, 0, 0.7); }
 
@@ -769,7 +770,7 @@ input[type="radio"].visually-hidden {
     height: 16px;
     stroke: #1d1613; }
     .user-menu__icon:hover, .user-menu__icon:focus {
-      stroke: #a87b62; }
+      stroke: #009ebc; }
     .user-menu__icon:active {
       stroke: rgba(0, 0, 0, 0.7); }
   .user-menu__link {
