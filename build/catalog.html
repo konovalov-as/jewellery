@@ -98,7 +98,427 @@
     </header>
 
     <main class="page-main">
-      <h1 class="visually-hidden">Chjewellery - Online shopping jewellery</h1>
+      <h1 class="visually-hidden">Chjewellery - Online shopping jewellery | Catalog</h1>
+
+      <section class="page-hero page-hero--catalog container">
+        <h2 class="title-h2 title-h2--catalog">all jewellery</h2>
+        <p class="page-hero__slogan page-hero__slogan--catalog">Discover picks of fashion's finest trends in our
+          jewellery catalog</p>
+      </section>
+
+      <section class="catalog">
+        <div class="catalog__wrapper container">
+          <div class="catalog__left">
+            <div class="catalog__form-wrapper">
+              <form class="catalog__form" action="https://echo.htmlacademy.ru" method="post">
+                <ul class="catalog__form-group catalog__form-product">
+                  <li class="catalog__form-item">
+                    <a class="catalog__form-link catalog__form-link--opened">
+                      <span>
+                        Product
+                      </span>
+                      <svg width="15" height="8">
+                        <use xlink:href="img/sprite_auto.svg#icon-accordion-arrow"></use>
+                      </svg>
+                    </a>
+                    <ul>
+                      <li>
+                        <label class="field-checkbox">
+                          <input class="field-checkbox__input visually-hidden" type="checkbox" name="product-necklaces" id="product-necklaces" checked="">
+                          <span class="field-checkbox__indicator"></span>
+                          <span class="field-checkbox__label">Necklaces</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="field-checkbox">
+                          <input class="field-checkbox__input visually-hidden" type="checkbox" name="product-chokers" id="product-chokers" checked="">
+                          <span class="field-checkbox__indicator"></span>
+                          <span class="field-checkbox__label">Chokers</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="field-checkbox">
+                          <input class="field-checkbox__input visually-hidden" type="checkbox" name="product-rings" id="product-rings">
+                          <span class="field-checkbox__indicator"></span>
+                          <span class="field-checkbox__label">Rings</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="field-checkbox">
+                          <input class="field-checkbox__input visually-hidden" type="checkbox" name="product-earrings" id="product-earrings" checked="">
+                          <span class="field-checkbox__indicator"></span>
+                          <span class="field-checkbox__label">Earrings</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="catalog__form-item">
+                    <a class="catalog__form-link">
+                      <span>
+                        Material
+                      </span>
+                      <svg width="15" height="8">
+                        <use xlink:href="img/sprite_auto.svg#icon-accordion-arrow"></use>
+                      </svg>
+                    </a>
+                    <ul class="catalog__form-link catalog__form-link--hidden">
+                      <li>
+                        <label class="field-checkbox">
+                          <input class="field-checkbox__input visually-hidden" type="checkbox" name="material-necklaces" id="material-necklaces" checked="">
+                          <span class="field-checkbox__indicator"></span>
+                          <span class="field-checkbox__label">Necklaces</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="field-checkbox">
+                          <input class="field-checkbox__input visually-hidden" type="checkbox" name="material-chokers" id="material-chokers" disabled="">
+                          <span class="field-checkbox__indicator"></span>
+                          <span class="field-checkbox__label">Chokers</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="field-checkbox">
+                          <input class="field-checkbox__input visually-hidden" type="checkbox" name="material-rings" id="material-rings">
+                          <span class="field-checkbox__indicator"></span>
+                          <span class="field-checkbox__label">Rings</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="field-checkbox">
+                          <input class="field-checkbox__input visually-hidden" type="checkbox" name="material-earrings" id="material-earrings" checked="" disabled="">
+                          <span class="field-checkbox__indicator"></span>
+                          <span class="field-checkbox__label">Earrings</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="catalog__form-item">
+                    <a class="catalog__form-link">
+                      <span>
+                        Collection
+                      </span>
+                      <svg width="15" height="8">
+                        <use xlink:href="img/sprite_auto.svg#icon-accordion-arrow"></use>
+                      </svg>
+                    </a>
+                    <ul class="catalog__form-link catalog__form-link--hidden">
+                      <li>
+                        <label class="field-checkbox">
+                          <input class="field-checkbox__input visually-hidden" type="checkbox" name="collection-necklaces" id="collection-necklaces">
+                          <span class="field-checkbox__indicator"></span>
+                          <span class="field-checkbox__label">Necklaces</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="field-checkbox">
+                          <input class="field-checkbox__input visually-hidden" type="checkbox" name="collection-chokers" id="collection-chokers">
+                          <span class="field-checkbox__indicator"></span>
+                          <span class="field-checkbox__label">Chokers</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="field-checkbox">
+                          <input class="field-checkbox__input visually-hidden" type="checkbox" name="collection-rings" id="collection-rings">
+                          <span class="field-checkbox__indicator"></span>
+                          <span class="field-checkbox__label">Rings</span>
+                        </label>
+                      </li>
+                      <li>
+                        <label class="field-checkbox">
+                          <input class="field-checkbox__input visually-hidden" type="checkbox" name="collection-earrings" id="collection-earrings">
+                          <span class="field-checkbox__indicator"></span>
+                          <span class="field-checkbox__label">Earrings</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="catalog__form-item">
+                    <a class="catalog__form-link catalog__form-link--opened">
+                      <span>
+                        Price
+                      </span>
+                      <svg width="15" height="8">
+                        <use xlink:href="img/sprite_auto.svg#icon-accordion-arrow"></use>
+                      </svg>
+                    </a>
+                    <ul>
+                      <li>
+                        <label class="field-checkbox">
+                          <input class="field-checkbox__input visually-hidden" type="checkbox" name="price-necklaces" id="price-necklaces">
+                          <span class="field-checkbox__indicator"></span>
+                          <span class="field-checkbox__label">price</span>
+                        </label>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+
+                <div class="catalog__form-submit">
+                  <button type="submit">Apply</button>
+                </div>
+                <div class="catalog__form-reset">
+                  <button type="reset">Clear All</button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="catalog__right card">
+            <ul class="catalog__list card__list">
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-1-mobile@1x.webp 1x, img/card-item-1-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-1-tablet@1x.webp 1x, img/card-item-1-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-1-desktop@1x.webp 1x, img/card-item-1-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-1-mobile@1x.jpg 1x, img/card-item-1-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-1-tablet@1x.jpg 1x, img/card-item-1-tablet@2x.jpg 2x">
+                      <img src="img/card-item-1-desktop@1x.jpg" srcset="img/card-item-1-desktop@2x.jpg 2x" alt="Double pearl earrings" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Double pearl earrings</p>
+                  <span class="card__price">$ 115</span>
+                </a>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-2-mobile@1x.webp 1x, img/card-item-2-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-2-tablet@1x.webp 1x, img/card-item-2-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-2-desktop@1x.webp 1x, img/card-item-2-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-2-mobile@1x.jpg 1x, img/card-item-2-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-2-tablet@1x.jpg 1x, img/card-item-2-tablet@2x.jpg 2x">
+                      <img src="img/card-item-2-desktop@1x.jpg" srcset="img/card-item-2-desktop@2x.jpg 2x" alt="Choker with gold bead" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Choker with gold bead</p>
+                  <span class="card__price">$ 55</span>
+                </a>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-3-mobile@1x.webp 1x, img/card-item-3-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-3-tablet@1x.webp 1x, img/card-item-3-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-3-desktop@1x.webp 1x, img/card-item-3-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-3-mobile@1x.jpg 1x, img/card-item-3-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-3-tablet@1x.jpg 1x, img/card-item-3-tablet@2x.jpg 2x">
+                      <img src="img/card-item-3-desktop@1x.jpg" srcset="img/card-item-3-desktop@2x.jpg 2x" alt="Gold layered necklace" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Gold layered necklace</p>
+                  <span class="card__price">$ 155</span>
+                </a>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-4-mobile@1x.webp 1x, img/card-item-4-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-4-tablet@1x.webp 1x, img/card-item-4-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-4-desktop@1x.webp 1x, img/card-item-4-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-4-mobile@1x.jpg 1x, img/card-item-4-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-4-tablet@1x.jpg 1x, img/card-item-4-tablet@2x.jpg 2x">
+                      <img src="img/card-item-4-desktop@1x.jpg" srcset="img/card-item-4-desktop@2x.jpg 2x" alt="Blue gemstone pendant" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Blue gemstone pendant</p>
+                  <span class="card__price">$ 105</span>
+                </a>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-5-mobile@1x.webp 1x, img/card-item-5-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-5-tablet@1x.webp 1x, img/card-item-5-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-5-desktop@1x.webp 1x, img/card-item-5-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-5-mobile@1x.jpg 1x, img/card-item-5-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-5-tablet@1x.jpg 1x, img/card-item-5-tablet@2x.jpg 2x">
+                      <img src="img/card-item-5-desktop@1x.jpg" srcset="img/card-item-5-desktop@2x.jpg 2x" alt="Boho earrings" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Boho earrings</p>
+                  <span class="card__price">$ 75</span>
+                </a>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-6-mobile@1x.webp 1x, img/card-item-6-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-6-tablet@1x.webp 1x, img/card-item-6-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-6-desktop@1x.webp 1x, img/card-item-6-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-6-mobile@1x.jpg 1x, img/card-item-6-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-6-tablet@1x.jpg 1x, img/card-item-6-tablet@2x.jpg 2x">
+                      <img src="img/card-item-6-desktop@1x.jpg" srcset="img/card-item-6-desktop@2x.jpg 2x" alt="Boho earrings" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Gold bird necklace</p>
+                  <span class="card__price">$ 135</span>
+                </a>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-7-mobile@1x.webp 1x, img/card-item-7-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-7-tablet@1x.webp 1x, img/card-item-7-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-7-desktop@1x.webp 1x, img/card-item-7-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-7-mobile@1x.jpg 1x, img/card-item-7-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-7-tablet@1x.jpg 1x, img/card-item-7-tablet@2x.jpg 2x">
+                      <img src="img/card-item-7-desktop@1x.jpg" srcset="img/card-item-7-desktop@2x.jpg 2x" alt="Black leather choker" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Black leather choker</p>
+                  <span class="card__price">$ 85</span>
+                </a>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-8-mobile@1x.webp 1x, img/card-item-8-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-8-tablet@1x.webp 1x, img/card-item-8-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-8-desktop@1x.webp 1x, img/card-item-8-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-8-mobile@1x.jpg 1x, img/card-item-8-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-8-tablet@1x.jpg 1x, img/card-item-8-tablet@2x.jpg 2x">
+                      <img src="img/card-item-8-desktop@1x.jpg" srcset="img/card-item-8-desktop@2x.jpg 2x" alt="Necklace with amethyst" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Necklace with amethyst</p>
+                  <span class="card__price">$ 145</span>
+                </a>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-9-mobile@1x.webp 1x, img/card-item-9-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-9-tablet@1x.webp 1x, img/card-item-9-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-9-desktop@1x.webp 1x, img/card-item-9-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-9-mobile@1x.jpg 1x, img/card-item-9-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-9-tablet@1x.jpg 1x, img/card-item-9-tablet@2x.jpg 2x">
+                      <img src="img/card-item-9-desktop@1x.jpg" srcset="img/card-item-9-desktop@2x.jpg 2x" alt="Elephant earrings" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Elephant earrings</p>
+                  <span class="card__price">$ 95</span>
+                </a>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-10-mobile@1x.webp 1x, img/card-item-10-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-10-tablet@1x.webp 1x, img/card-item-10-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-10-desktop@1x.webp 1x, img/card-item-10-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-10-mobile@1x.jpg 1x, img/card-item-10-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-10-tablet@1x.jpg 1x, img/card-item-10-tablet@2x.jpg 2x">
+                      <img src="img/card-item-10-desktop@1x.jpg" srcset="img/card-item-10-desktop@2x.jpg 2x" alt="Threader necklace" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Threader necklace</p>
+                  <span class="card__price">$ 115</span>
+                </a>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-11-mobile@1x.webp 1x, img/card-item-11-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-11-tablet@1x.webp 1x, img/card-item-11-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-11-desktop@1x.webp 1x, img/card-item-11-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-11-mobile@1x.jpg 1x, img/card-item-11-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-11-tablet@1x.jpg 1x, img/card-item-11-tablet@2x.jpg 2x">
+                      <img src="img/card-item-11-desktop@1x.jpg" srcset="img/card-item-11-desktop@2x.jpg 2x" alt="Origami crane necklace" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Origami crane necklace</p>
+                  <span class="card__price">$ 105</span>
+                </a>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-12-mobile@1x.webp 1x, img/card-item-12-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-12-tablet@1x.webp 1x, img/card-item-12-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-12-desktop@1x.webp 1x, img/card-item-12-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-12-mobile@1x.jpg 1x, img/card-item-12-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-12-tablet@1x.jpg 1x, img/card-item-12-tablet@2x.jpg 2x">
+                      <img src="img/card-item-12-desktop@1x.jpg" srcset="img/card-item-12-desktop@2x.jpg 2x" alt="Marble earrings" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Marble earrings</p>
+                  <span class="card__price">$ 95</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="catalog__pagination pagination">
+          <div class="pagination__wrapper container">
+            <a class="pagination__link pagination__prev" href="#">Previous</a>
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a class="pagination__page pagination__page--current" href="#">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__page pagination__page--curent" href="#">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__page pagination__page--curent" href="#">3</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__page pagination__page--curent" href="#">4</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__page pagination__page--curent" href="#">5</a>
+              </li>
+            </ul>
+            <a class="pagination__link pagination__next" href="#">Next</a>
+          </div>
+        </div>
+      </section>
 
     </main>
 

@@ -49,4 +49,14 @@
     });
   });
 
+  // filter accordion
+  var filterToggleButtons = document.querySelectorAll('.catalog__form-link');
+  [].map.call(filterToggleButtons, function (filterButton) {
+    filterButton.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      filterButton.parentNode.querySelector('ul').classList.toggle('catalog__form-link--hidden');
+      filterButton.classList.toggle('catalog__form-link--opened');
+    });
+  });
+
 })();

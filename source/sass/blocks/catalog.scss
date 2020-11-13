@@ -1,0 +1,153 @@
+// left column
+.catalog__wrapper {
+  display: flex;
+}
+
+.catalog__left {
+  max-width: 250px;
+  width: 100%;
+  margin-right: 50px;
+  margin-bottom: 20px;
+}
+
+.catalog__form-group {
+  list-style: none;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+}
+
+.catalog__form-group .catalog__form-item {
+  margin-bottom: 0;
+  padding-top: 28px;
+  padding-bottom: 29px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-top: 1px solid #a87b62;
+  border-left: 1px solid #a87b62;
+  border-right: 1px solid #a87b62;
+
+  &:last-child {
+    border-bottom: 1px solid #a87b62;
+  }
+}
+
+.catalog__form-group span {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.catalog__form-group ul {
+  list-style: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 30px;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.catalog__form-group li {
+  margin-bottom: 15px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.catalog__form-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: #a87b62;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  &:active svg {
+    stroke: rgba(0, 0, 0, 0.7);
+  }
+}
+
+.catalog__form-link svg {
+  width: 25px;
+  height: 8px;
+  stroke: #a87b62;
+  transform: rotate(180deg);
+}
+
+.catalog__form-link--opened svg {
+  transform: rotate(0deg);
+}
+
+.catalog__form-link--hidden {
+  display: none;
+}
+
+// Price range
+
+.catalog__form-submit button {
+  width: 100%;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+  color: white;
+  background: #a87b62;
+  border: 1px solid #a87b62;
+  margin-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $base-color;
+    background-color: white;
+  }
+
+  &:active {
+    background-color: #a87b62;
+  }
+}
+
+.catalog__form-reset button {
+  display: block;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+  cursor: pointer;
+  border-bottom: 1px solid #a87b62;
+  margin: 0 auto;
+
+  &:hover,
+  &:focus {
+    color: #a87b62;
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.7);
+    border-bottom-color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+// right column
+.catalog__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog__pagination {
+  border-top: 1px solid #f6f5f4;
+}

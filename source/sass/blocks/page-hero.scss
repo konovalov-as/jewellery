@@ -14,6 +14,17 @@
   }
 }
 
+.page-hero--catalog {
+  min-height: 261px;
+  margin-bottom: 80px;
+
+  background-image: url("../img/bg-hero-desktop-catalog@1x.jpg");
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-hero-desktop-catalog@2x.jpg");
+  }
+}
+
 .page-hero__slogan {
   font-family: $alternative-1-font-family;
   font-style: italic;
@@ -23,6 +34,12 @@
   color: white;
   margin-top: 0;
   margin-bottom: 20px;
+}
+
+.page-hero__slogan--catalog {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 29px;
 }
 
 @media (max-width: $tablet-width-only) {
