@@ -49,3 +49,9 @@
     line-height: 44px;
   }
 }
+
+@media (max-width: $mobile-width-only) {
+  .page-hero {
+    margin-bottom: 80px;
+  }
+}

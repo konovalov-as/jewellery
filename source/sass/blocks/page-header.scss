@@ -1,5 +1,14 @@
 .page-header--bg {
   background-color: #a87b62;
+
+  &:hover .main-menu-toggle__svg-icon,
+  &:focus .main-menu-toggle__svg-icon {
+    stroke: $base-color;
+  }
+
+  &:active .main-menu-toggle__svg-icon {
+    stroke: rgba(0, 0, 0, 0.5);
+  }
 }
 
 .page-header--bg .main-menu-toggle__svg-icon {
@@ -8,17 +17,6 @@
   &:hover,
   &:focus {
     stroke: white;
-  }
-}
-
-.page-header--bg {
-  &:hover .main-menu-toggle__svg-icon,
-  &:focus .main-menu-toggle__svg-icon {
-    stroke: $base-color;
-  }
-
-  &:active .main-menu-toggle__svg-icon {
-    stroke: rgba(0, 0, 0, 0.5);
   }
 }
 

@@ -1,0 +1,173 @@
+.new__wrapper {
+  position: relative;
+  margin-bottom: 130px;
+}
+
+.new__slider-content {
+  margin-bottom: 60px;
+}
+
+.new__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.new__item {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.new__item-image img {
+  width: 270px;
+  height: 284px;
+}
+
+.new__item-image {
+  margin-bottom: 25px;
+}
+
+.new__item-label {
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.new__item-price {
+  display: block;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
+.new__slider-count {
+  text-align: center;
+}
+
+.new__slider-count-item {
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+  color: #9b9997;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  margin-right: 15px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    color: #a87b62;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba(29, 22, 19, 0.7);
+  }
+}
+
+.new__slider-count-item--current {
+  color: $base-color;
+}
+
+.new__slider-button {
+  position: absolute;
+  top: 0;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover svg,
+  &:focus svg {
+    stroke: $base-color;
+  }
+
+  &:active svg {
+    stroke: rgba(29, 22, 19, 0.7);
+  }
+}
+
+.new__slider-prev-button {
+  left: 83px;
+}
+
+.new__slider-next-button {
+  right: 98px;
+}
+
+.new__slider-button svg {
+  width: 29px;
+  height: 9px;
+  stroke: #a87b62;
+}
+
+.new__slider-next-button svg {
+  transform: rotate(180deg);
+}
+
+@media (max-width: $tablet-width-only) {
+  .new__wrapper {
+    margin-bottom: 80px;
+  }
+
+  .new__slider-content {
+    margin-bottom: 50px;
+  }
+
+  .new__item--hidden {
+    display: none;
+  }
+
+  .new__item {
+    flex-shrink: 0;
+  }
+
+  .new__item-image {
+    margin-bottom: 19px;
+  }
+
+  .new__item-image img {
+    width: 324px;
+    height: 340px;
+  }
+
+  .new__slider-button svg {
+    width: 36px;
+    height: 15px;
+  }
+
+  .new__slider-prev-button {
+    left: 45px;
+  }
+
+  .new__slider-next-button {
+    right: 45px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .new__item {
+    max-width: 130px;
+  }
+
+  .new__item-image img {
+    width: 130px;
+    height: 136px;
+  }
+
+  .new__slider-button {
+    display: none;
+  }
+}

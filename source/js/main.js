@@ -39,6 +39,14 @@
   }
   window.addEventListener("resize", onresize);
 
-  //
+  // faq accordion
+  var faqToggleButtons = document.querySelectorAll('.faq__arrow-link');
+  [].map.call(faqToggleButtons, function (faqButton) {
+    faqButton.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      faqButton.parentNode.querySelector('.faq__answer').classList.toggle('faq__answer--hidden');
+      faqButton.classList.toggle('faq__arrow-link--opened');
+    });
+  });
 
 })();
