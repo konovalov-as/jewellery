@@ -1,4 +1,4 @@
-// order modal
+// cart modal
 .modal--open {
   height: 100vh;
   overflow: hidden;
@@ -14,7 +14,7 @@
   visibility: hidden;
   transform: scaleX(1.1) scaleY(1.1);
   transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(29, 22, 19, 0.25);
 }
 
 .modal--show {
@@ -23,4 +23,36 @@
   transform: scaleX(1) scaleY(1);
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
   z-index: 30;
+}
+
+.modal__content {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+// modal close button
+.modal__close {
+  position: absolute;
+  top: 32px;
+  right: 32px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover svg,
+  &:focus svg {
+    fill: #a87b62;
+  }
+
+  &:active svg {
+    fill: rgba(0, 0, 0, 0.7);
+  }
+}
+
+.modal__close svg {
+  width: 14px;
+  height: 14px;
 }

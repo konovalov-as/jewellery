@@ -62,8 +62,53 @@
   // filter open button
   var openFilter = document.querySelector('.catalog__form-button');
   var filterForm = document.querySelector('.catalog__form');
-  openFilter.addEventListener('click', function () {
-    filterForm.classList.toggle('catalog__form--hidden')
+  if (openFilter) {
+    openFilter.addEventListener('click', function () {
+      filterForm.classList.toggle('catalog__form--hidden')
+    });
+  }
+
+  // open modal
+  var bodyPage = document.querySelector('.body');
+  var cartModal = bodyPage.querySelector('.modal--cart');
+  var addCartButton = bodyPage.querySelector('.product__add-cart');
+  addCartButton.addEventListener('click', function (evt) {
+    evt.preventDefault();
+    cartModal.classList.add('modal--show');
+    bodyPage.classList.add('modal--open');
+  });
+
+  // close modal by close button
+  var modalCloseButtons = document.querySelectorAll('.modal__close');
+  for (var closeButton = 0; closeButton < modalCloseButtons.length; closeButton++) {
+    modalCloseButtons[closeButton].addEventListener('click', function () {
+      cartModal.classList.remove('modal--show');
+      // successModal.classList.remove('modal--show');
+      bodyPage.classList.remove('modal--open');
+    });
+  }
+
+  // close modal by Esc key
+  var modals = document.querySelectorAll('.modal');
+  document.addEventListener('keydown', function (evt) {
+    if (evt.keyCode !== 27) {
+      return;
+    }
+    for (var modalIndex = 0; modalIndex < modals.length; modalIndex++) {
+      modals[modalIndex].classList.remove('modal--show');
+    }
+    bodyPage.classList.remove('modal--open');
+  });
+
+  // close modal by click overlay
+  [].map.call(modals, function (modal) {
+    modal.addEventListener('click', function (evt) {
+      if (evt.target.classList[0] !== 'modal') {
+        return;
+      }
+      modal.classList.remove('modal--show');
+      bodyPage.classList.remove('modal--open');
+    });
   });
 
 })();
