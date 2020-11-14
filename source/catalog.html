@@ -107,10 +107,12 @@
       </section>
 
       <section class="catalog">
+        <h2 class="visually-hidden">Catalog page</h2>
         <div class="catalog__wrapper container">
           <div class="catalog__left">
             <div class="catalog__form-wrapper">
-              <form class="catalog__form" action="https://echo.htmlacademy.ru" method="post">
+              <button class="catalog__form-button" type="button">Filter</button>
+              <form class="catalog__form catalog__form--hidden" action="https://echo.htmlacademy.ru" method="post">
                 <ul class="catalog__form-group catalog__form-product">
                   <li class="catalog__form-item">
                     <a class="catalog__form-link catalog__form-link--opened">
@@ -165,7 +167,7 @@
                         <use xlink:href="img/sprite_auto.svg#icon-accordion-arrow"></use>
                       </svg>
                     </a>
-                    <ul class="catalog__form-link catalog__form-link--hidden">
+                    <ul class="catalog__form-list--hidden">
                       <li>
                         <label class="field-checkbox">
                           <input class="field-checkbox__input visually-hidden" type="checkbox" name="material-necklaces"
@@ -209,7 +211,7 @@
                         <use xlink:href="img/sprite_auto.svg#icon-accordion-arrow"></use>
                       </svg>
                     </a>
-                    <ul class="catalog__form-link catalog__form-link--hidden">
+                    <ul class="catalog__form-list catalog__form-list--hidden">
                       <li>
                         <label class="field-checkbox">
                           <input class="field-checkbox__input visually-hidden" type="checkbox"
@@ -253,14 +255,25 @@
                         <use xlink:href="img/sprite_auto.svg#icon-accordion-arrow"></use>
                       </svg>
                     </a>
-                    <ul>
+                    <ul class="catalog__form-list catalog__form-list--pice">
                       <li>
-                        <label class="field-checkbox">
-                          <input class="field-checkbox__input visually-hidden" type="checkbox" name="price-necklaces"
-                            id="price-necklaces">
-                          <span class="field-checkbox__indicator"></span>
-                          <span class="field-checkbox__label">price</span>
-                        </label>
+                        <div class="range-filter">
+                          <div class="range-filter__controls">
+                            <div class="range-filter__scale">
+                              <div class="range-filter__bar"></div>
+                            </div>
+                            <div class="range-filter__toggle range-filter__toggle-min"></div>
+                            <div class="range-filter__toggle range-filter__toggle-max"></div>
+                          </div>
+                          <div class="range-filter__price-controls">
+                            <label class="range-filter__min-price">$
+                              <input class="no-arrow" name="min-price" type="number" placeholder="55" min="0">
+                            </label>
+                            <label class="range-filter__max-price">$
+                              <input class="no-arrow" name="max-price" type="number" placeholder="155" min="0">
+                            </label>
+                          </div>
+                        </div>
                       </li>
                     </ul>
                   </li>

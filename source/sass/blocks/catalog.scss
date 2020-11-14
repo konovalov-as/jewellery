@@ -10,6 +10,10 @@
   margin-bottom: 20px;
 }
 
+.catalog__form-button {
+  display: none;
+}
+
 .catalog__form-group {
   list-style: none;
   margin: 0;
@@ -86,11 +90,15 @@
   transform: rotate(0deg);
 }
 
-.catalog__form-link--hidden {
+.catalog__form-list--hidden {
   display: none;
 }
 
 // Price range
+ul.catalog__form-list--pice {
+  margin-left: 0;
+  margin-right: 0;
+}
 
 .catalog__form-submit button {
   width: 100%;
@@ -115,29 +123,35 @@
 
   &:active {
     background-color: #a87b62;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
   }
 }
 
 .catalog__form-reset button {
   display: block;
-  border: none;
-  padding: 0;
+  width: 100%;
   background-color: transparent;
   font-weight: 500;
   line-height: 21px;
   text-align: center;
   cursor: pointer;
-  border-bottom: 1px solid #a87b62;
-  margin: 0 auto;
+  border: 1px solid #a87b62;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   &:hover,
   &:focus {
-    color: #a87b62;
+    color: white;
+    background-color: #a87b62;
   }
 
   &:active {
-    color: rgba(0, 0, 0, 0.7);
-    border-bottom-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -150,4 +164,52 @@
 
 .catalog__pagination {
   border-top: 1px solid #f6f5f4;
+}
+
+@media (max-width: $tablet-width-only) {
+  .catalog__wrapper {
+    display: block;
+  }
+
+  .catalog__left {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 50px;
+  }
+
+  .catalog__form-button {
+    display: block;
+    width: 100%;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: center;
+    background-color: #a87b62;
+    border: 1px solid #a87b62;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      color: $base-color;
+      background-color: white;
+    }
+
+    &:active {
+      background-color: #a87b62;
+    }
+  }
+
+  .catalog__form--hidden {
+    display: none;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .container {
+
+  }
 }

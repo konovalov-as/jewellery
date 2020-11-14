@@ -49,3 +49,29 @@
   display: block;
   text-align: center;
 }
+
+@media (max-width: $tablet-width-only) {
+  .card__item {
+    max-width: 130px;
+
+    &:nth-child(3n) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+  }
+
+  .card__image img {
+    width: 206px;
+    height: 208px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .card__image img {
+    width: 130px;
+    height: 136px;
+  }
+}

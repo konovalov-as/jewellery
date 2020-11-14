@@ -54,9 +54,16 @@
   [].map.call(filterToggleButtons, function (filterButton) {
     filterButton.addEventListener('click', function (evt) {
       evt.preventDefault();
-      filterButton.parentNode.querySelector('ul').classList.toggle('catalog__form-link--hidden');
+      filterButton.parentNode.querySelector('ul').classList.toggle('catalog__form-list--hidden');
       filterButton.classList.toggle('catalog__form-link--opened');
     });
+  });
+
+  // filter open button
+  var openFilter = document.querySelector('.catalog__form-button');
+  var filterForm = document.querySelector('.catalog__form');
+  openFilter.addEventListener('click', function () {
+    filterForm.classList.toggle('catalog__form--hidden')
   });
 
 })();

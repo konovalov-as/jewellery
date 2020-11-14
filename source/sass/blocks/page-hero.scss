@@ -50,6 +50,14 @@
       background-image: url("../img/bg-hero-tablet-index@2x.jpg");
     }
   }
+
+  .page-hero--catalog {
+    background-image: url("../img/bg-hero-tablet-catalog@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-hero-tablet-catalog@2x.jpg");
+    }
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -58,6 +66,14 @@
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-hero-mobile-index@2x.jpg");
+    }
+  }
+
+  .page-hero--catalog {
+    background-image: url("../img/bg-hero-mobile-catalog@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-hero-mobile-catalog@2x.jpg");
     }
   }
 
@@ -70,5 +86,10 @@
 @media (max-width: $mobile-width-only) {
   .page-hero {
     margin-bottom: 80px;
+  }
+
+  .page-hero__slogan--catalog {
+    font-size: 22px;
+    line-height: 26px;
   }
 }
