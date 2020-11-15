@@ -1966,6 +1966,159 @@ ul.catalog__form-list--pice {
 .image__item--four {
   grid-area: "image__item--four"; }
 
+.cart__label {
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 34px;
+  text-align: center;
+  margin-top: 55px;
+  margin-bottom: 55px;
+  margin-left: 20px;
+  margin-right: 20px; }
+
+.cart__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 40px;
+  margin-left: 35px;
+  margin-right: 33px; }
+
+.cart__image {
+  margin-right: 20px; }
+
+.cart__image img {
+  width: 84px;
+  height: 79px; }
+
+.cart__inner {
+  max-width: 270px;
+  width: 100%; }
+
+.cart__title {
+  font-family: "Cormorant Garamond", "Georgia", serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  margin-top: 0;
+  margin-bottom: 20px; }
+
+.cart__price {
+  font-size: 18px;
+  line-height: 23px; }
+
+.cart__form-plus button,
+.cart__form-minus button {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  color: #9b9997;
+  cursor: pointer;
+  font-size: 24px; }
+  .cart__form-plus button:hover, .cart__form-plus button:focus,
+  .cart__form-minus button:hover,
+  .cart__form-minus button:focus {
+    color: #a87b62; }
+  .cart__form-plus button:active,
+  .cart__form-minus button:active {
+    opacity: 0.7; }
+
+.cart__form input {
+  font-size: 18px;
+  line-height: 23px;
+  padding: 0;
+  border: none;
+  width: 33px;
+  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 5px; }
+  .cart__form input:hover, .cart__form input:focus {
+    color: #a87b62; }
+  .cart__form input:active {
+    opacity: 0.7; }
+
+.cart__inner-2 {
+  border-top: 1px solid #f6f5f4;
+  padding-top: 20px;
+  padding-bottom: 55px;
+  padding-left: 35px;
+  padding-right: 35px; }
+
+.cart__text {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 10px;
+  margin-right: 10px; }
+  .cart__text:last-child {
+    margin-right: 0; }
+
+.cart__text--subtotal {
+  font-weight: 500; }
+
+.cart__inner-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px; }
+
+.cart__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.cart__continue,
+.cart__checkout {
+  font-weight: 500;
+  line-height: 21px;
+  text-align: center;
+  text-decoration: none;
+  border: 1px solid #a87b62;
+  max-width: 200px;
+  width: 100%;
+  margin-bottom: 10px;
+  padding-top: 23px;
+  padding-bottom: 22px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+.cart__continue {
+  color: #1d1613;
+  -webkit-transition: translate ease 1s;
+  transition: translate ease 1s; }
+  .cart__continue:hover, .cart__continue:focus {
+    background-color: #a87b62;
+    color: white; }
+  .cart__continue:active {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+    -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5); }
+
+.cart__checkout {
+  color: white;
+  background-color: #a87b62;
+  -webkit-transition: translate ease 1s;
+  transition: translate ease 1s; }
+  .cart__checkout:hover, .cart__checkout:focus {
+    background-color: white;
+    color: #1d1613; }
+  .cart__checkout:active {
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+    -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
+            box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5); }
+
 .page-footer {
   color: white;
   background-color: black;
@@ -2202,6 +2355,9 @@ ul.catalog__form-list--pice {
   overflow: hidden; }
 
 .modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: fixed;
   left: 0;
   top: 0;
@@ -2231,13 +2387,16 @@ ul.catalog__form-list--pice {
 .modal__content {
   position: relative;
   max-width: 500px;
-  margin: 0 auto;
-  background-color: white; }
+  width: 100%;
+  margin: auto;
+  background-color: white;
+  -webkit-box-shadow: 0 4px 32px rgba(121, 121, 121, 0.24);
+          box-shadow: 0 4px 32px rgba(121, 121, 121, 0.24); }
 
 .modal__close {
   position: absolute;
-  top: 32px;
-  right: 32px;
+  top: 20px;
+  right: 20px;
   padding: 0;
   border: none;
   background-color: transparent;

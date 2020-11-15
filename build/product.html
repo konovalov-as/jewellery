@@ -396,7 +396,7 @@
 
     <section class="modal modal--cart">
       <div class="modal__content modal__content--cart cart">
-        <p class="modal__label">The item was added to your cart</p>
+        <p class="cart__label">The item was added to your cart</p>
         <div class="cart__wrapper">
           <div class="cart__image">
             <!-- 1х: 84px; 2x: 168px -->
@@ -421,7 +421,7 @@
             </div>
             <label>
               <span class="visually-hidden">Quantity item in your cart</span>
-              <input type="number" name="cart-value" id="cart-value" placeholder="1" min="1" max="1000000" required="">
+              <input class="no-arrow" type="number" name="cart-value" id="cart-value" placeholder="1" min="1" max="1000000" required="">
             </label>
             <div class="cart__form-minus">
               <button type="button">-</button>
@@ -430,17 +430,17 @@
         </div>
         <div class="cart__inner-2">
           <div class="cart__inner-3">
-            <span class="cart__label">You have 1 item in the cart</span>
-            <span class="cart__label cart__label--subtotal">Cart subtotal: $ 115</span>
+            <span class="cart__text">You have 1 item in the cart</span>
+            <span class="cart__text cart__text--subtotal">Cart subtotal: $ 115</span>
           </div>
-        </div>
-        <div class="cart__buttons">
-          <button class="cart__continue" type="button">Continue shopping</button>
-          <button class="cart__submit" type="submit">Checkout</button>
+          <div class="cart__actions">
+            <a class="cart__continue" href="catalog.html">Continue shopping</a>
+            <a class="cart__checkout" href="#">Checkout</a>
+          </div>
         </div>
         <button class="modal__close" type="button">
           <span class="visually-hidden">Close</span>
-          <svg width="15" height="15">
+          <svg width="14" height="14">
             <use xlink:href="img/sprite_auto.svg#icon-close-modal"></use>
           </svg>
         </button>

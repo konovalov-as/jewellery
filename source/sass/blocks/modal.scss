@@ -5,6 +5,7 @@
 }
 
 .modal {
+  display: flex;
   position: fixed;
   left: 0;
   top: 0;
@@ -28,15 +29,17 @@
 .modal__content {
   position: relative;
   max-width: 500px;
-  margin: 0 auto;
+  width: 100%;
+  margin: auto;
   background-color: white;
+  box-shadow: 0 4px 32px rgba(121, 121, 121, 0.24);
 }
 
 // modal close button
 .modal__close {
   position: absolute;
-  top: 32px;
-  right: 32px;
+  top: 20px;
+  right: 20px;
   padding: 0;
   border: none;
   background-color: transparent;
