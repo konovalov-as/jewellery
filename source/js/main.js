@@ -70,7 +70,7 @@
 
   // open cart modal
   var bodyPage = document.querySelector('.body');
-  var modal = bodyPage.querySelector('.modal');
+  var modals = bodyPage.querySelectorAll('.modal');
   var cartModal = bodyPage.querySelector('.modal--cart');
   var addCartButton = bodyPage.querySelector('.product__add-cart');
   if (addCartButton) {
@@ -102,9 +102,11 @@
   var modalCloseButtons = document.querySelectorAll('.modal__close');
   for (var closeButton = 0; closeButton < modalCloseButtons.length; closeButton++) {
     modalCloseButtons[closeButton].addEventListener('click', function () {
-      modal.classList.remove('modal--show');
-      // successModal.classList.remove('modal--show');
-      bodyPage.classList.remove('modal--open');
+      for (let modalIndex = 0; modalIndex < modals.length; modalIndex++) {
+        modals[modalIndex].classList.remove('modal--show');
+        // successModal.classList.remove('modal--show');
+        bodyPage.classList.remove('modal--open');
+      }
     });
   }
 
@@ -168,5 +170,10 @@
     }
     fieldName.setCustomValidity('');
   };
+
+  // sign-up
+  var signUpForm = document.querySelector('.sign-up-form');
+  var singUpEmail = signUpForm.querySelector('.sign-up-form input');
+  singUpEmail.value = localStorage.getItem('emailInput');
 
 })();
