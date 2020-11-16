@@ -84,11 +84,17 @@
   // open login modal
   var loginModal = bodyPage.querySelector('.modal--login');
   var loginButton = bodyPage.querySelector('.user-menu__link--login');
+  var loginForm = bodyPage.querySelector('.login__form');
+  var emailInput = loginForm.querySelector('.login__form-field-email input');
+  var passwordInput = loginForm.querySelector('.login__form-field-password input');
+
   if (loginButton) {
     loginButton.addEventListener('click', function (evt) {
       evt.preventDefault();
       loginModal.classList.add('modal--show');
       bodyPage.classList.add('modal--open');
+      loginModal.value = localStorage.getItem('emailInput');
+      emailInput.focus();
     });
   }
 
@@ -124,5 +130,43 @@
       bodyPage.classList.remove('modal--open');
     });
   });
+
+  // validate form
+  emailInput.addEventListener('invalid', function () {
+    validateEmail(emailInput);
+  });
+
+  emailInput.addEventListener('input', function () {
+    validateEmail(emailInput);
+  });
+
+  passwordInput.addEventListener('invalid', function () {
+    validatePassword(passwordInput);
+  });
+
+  passwordInput.addEventListener('input', function () {
+    validatePassword(passwordInput);
+  });
+
+  var validateEmail = function (fieldName) {
+    if (fieldName.validity.valueMissing) {
+      fieldName.setCustomValidity('Do you have an email?');
+      return;
+    }
+    if (fieldName.validity.typeMismatch) {
+      fieldName.setCustomValidity('Please enter a correct email');
+      return;
+    }
+    fieldName.setCustomValidity('');
+    localStorage.setItem('emailInput', fieldName.value);
+  };
+
+  var validatePassword = function (fieldName) {
+    if (fieldName.validity.valueMissing) {
+      fieldName.setCustomValidity('This field is required');
+      return;
+    }
+    fieldName.setCustomValidity('');
+  };
 
 })();
