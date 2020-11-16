@@ -64,9 +64,15 @@
   var filterForm = document.querySelector('.catalog__form');
   if (openFilter) {
     openFilter.addEventListener('click', function () {
-      filterForm.classList.toggle('catalog__form--hidden')
+      filterForm.classList.remove('catalog__form--hidden');
     });
   }
+
+  // filter close button
+  var closeFilterButton = filterForm.querySelector('.catalog__form-close button')
+  closeFilterButton.addEventListener('click', function () {
+    filterForm.classList.add('catalog__form--hidden');
+  });
 
   // open cart modal
   var bodyPage = document.querySelector('.body');

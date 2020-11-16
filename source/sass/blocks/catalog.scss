@@ -155,6 +155,10 @@ ul.catalog__form-list--pice {
   }
 }
 
+.catalog__form-close button {
+  display: none;
+}
+
 // right column
 .catalog__list {
   list-style: none;
@@ -169,12 +173,69 @@ ul.catalog__form-list--pice {
 @media (max-width: $tablet-width-only) {
   .catalog__wrapper {
     display: block;
+    position: relative;
   }
 
   .catalog__left {
     max-width: 100%;
     margin-right: 0;
     margin-bottom: 50px;
+  }
+
+  .catalog__form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0px 5px 32px rgba(219, 213, 208, 0.24);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 40px;
+  }
+
+  .catalog__form-group .catalog__form-item {
+    border-top: 1px solid #a87b62;
+    border-left: none;
+    border-right: none;
+
+    &:first-child {
+      border-top: none;
+    }
+}
+
+  .catalog__form-close button {
+    display: block;
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+
+    &:hover svg,
+    &:focus svg {
+      opacity: 0.7;
+    }
+
+    &:active svg{
+      opacity: 0.5;
+    }
+  }
+
+  .closeFilterSvg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .circle {
+    fill: $base-color;
+  }
+
+  .close {
+    fill: white;
   }
 
   .catalog__form-button {
@@ -210,6 +271,5 @@ ul.catalog__form-list--pice {
 
 @media (max-width: $mobile-width-only) {
   .container {
-
   }
 }

@@ -1563,6 +1563,9 @@ ul.catalog__form-list--pice {
     -webkit-box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
             box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5); }
 
+.catalog__form-close button {
+  display: none; }
+
 .catalog__list {
   list-style: none;
   margin: 0;
@@ -1573,11 +1576,51 @@ ul.catalog__form-list--pice {
 
 @media (max-width: 1023px) {
   .catalog__wrapper {
-    display: block; }
+    display: block;
+    position: relative; }
   .catalog__left {
     max-width: 100%;
     margin-right: 0;
     margin-bottom: 50px; }
+  .catalog__form {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: white;
+    -webkit-box-shadow: 0px 5px 32px rgba(219, 213, 208, 0.24);
+            box-shadow: 0px 5px 32px rgba(219, 213, 208, 0.24);
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-bottom: 40px; }
+  .catalog__form-group .catalog__form-item {
+    border-top: 1px solid #a87b62;
+    border-left: none;
+    border-right: none; }
+    .catalog__form-group .catalog__form-item:first-child {
+      border-top: none; }
+  .catalog__form-close button {
+    display: block;
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer; }
+    .catalog__form-close button:hover svg,
+    .catalog__form-close button:focus svg {
+      opacity: 0.7; }
+    .catalog__form-close button:active svg {
+      opacity: 0.5; }
+  .closeFilterSvg {
+    width: 32px;
+    height: 32px; }
+  .circle {
+    fill: #1d1613; }
+  .close {
+    fill: white; }
   .catalog__form-button {
     display: block;
     width: 100%;
