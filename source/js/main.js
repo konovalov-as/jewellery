@@ -68,21 +68,35 @@
     });
   }
 
-  // open modal
+  // open cart modal
   var bodyPage = document.querySelector('.body');
+  var modal = bodyPage.querySelector('.modal');
   var cartModal = bodyPage.querySelector('.modal--cart');
   var addCartButton = bodyPage.querySelector('.product__add-cart');
-  addCartButton.addEventListener('click', function (evt) {
-    evt.preventDefault();
-    cartModal.classList.add('modal--show');
-    bodyPage.classList.add('modal--open');
-  });
+  if (addCartButton) {
+    addCartButton.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      cartModal.classList.add('modal--show');
+      bodyPage.classList.add('modal--open');
+    });
+  }
+
+  // open login modal
+  var loginModal = bodyPage.querySelector('.modal--login');
+  var loginButton = bodyPage.querySelector('.user-menu__link--login');
+  if (loginButton) {
+    loginButton.addEventListener('click', function (evt) {
+      evt.preventDefault();
+      loginModal.classList.add('modal--show');
+      bodyPage.classList.add('modal--open');
+    });
+  }
 
   // close modal by close button
   var modalCloseButtons = document.querySelectorAll('.modal__close');
   for (var closeButton = 0; closeButton < modalCloseButtons.length; closeButton++) {
     modalCloseButtons[closeButton].addEventListener('click', function () {
-      cartModal.classList.remove('modal--show');
+      modal.classList.remove('modal--show');
       // successModal.classList.remove('modal--show');
       bodyPage.classList.remove('modal--open');
     });
