@@ -189,7 +189,7 @@ ul.catalog__form-list--pice {
     right: 0;
     z-index: 10;
     background-color: white;
-    box-shadow: 0px 5px 32px rgba(219, 213, 208, 0.24);
+    box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24);
     margin-left: 20px;
     margin-right: 20px;
     padding-bottom: 40px;
@@ -203,7 +203,7 @@ ul.catalog__form-list--pice {
     &:first-child {
       border-top: none;
     }
-}
+  }
 
   .catalog__form-close button {
     display: block;
@@ -220,7 +220,7 @@ ul.catalog__form-list--pice {
       opacity: 0.7;
     }
 
-    &:active svg{
+    &:active svg {
       opacity: 0.5;
     }
   }
@@ -266,10 +266,5 @@ ul.catalog__form-list--pice {
 
   .catalog__form--hidden {
     display: none;
-  }
-}
-
-@media (max-width: $mobile-width-only) {
-  .container {
   }
 }

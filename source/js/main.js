@@ -9,7 +9,7 @@
   mainMenuToggle.addEventListener('click', function () {
     mainNav.classList.toggle('main-nav--closed');
     mainNav.classList.toggle('main-nav--opened');
-    headerContainer.classList.toggle('page-header--bg')
+    headerContainer.classList.toggle('page-header--bg');
   });
 
   // hide social labels
@@ -36,8 +36,8 @@
     if (document.documentElement.clientWidth > 768) {
       hideLabels('remove');
     }
-  }
-  window.addEventListener("resize", onresize);
+  };
+  window.addEventListener('resize', onresize);
 
   // faq accordion
   var faqToggleButtons = document.querySelectorAll('.faq__arrow-link');
@@ -62,7 +62,6 @@
   // filter open button
   var openFilter = document.querySelector('.catalog__form-button');
   var filterForm = document.querySelector('.catalog__form');
-  console.log(filterForm)
   if (openFilter) {
     openFilter.addEventListener('click', function () {
       filterForm.classList.remove('catalog__form--hidden');
@@ -71,7 +70,7 @@
 
   // filter close button
   if (filterForm) {
-    var closeFilterButton = filterForm.querySelector('.catalog__form-close button')
+    var closeFilterButton = filterForm.querySelector('.catalog__form-close button');
     closeFilterButton.addEventListener('click', function () {
       filterForm.classList.add('catalog__form--hidden');
     });
@@ -111,7 +110,7 @@
   var modalCloseButtons = document.querySelectorAll('.modal__close');
   for (var closeButton = 0; closeButton < modalCloseButtons.length; closeButton++) {
     modalCloseButtons[closeButton].addEventListener('click', function () {
-      for (let modalIndex = 0; modalIndex < modals.length; modalIndex++) {
+      for (var modalIndex = 0; modalIndex < modals.length; modalIndex++) {
         modals[modalIndex].classList.remove('modal--show');
         // successModal.classList.remove('modal--show');
         bodyPage.classList.remove('modal--open');
@@ -120,7 +119,7 @@
   }
 
   // close modal by Esc key
-  var modals = document.querySelectorAll('.modal');
+  // var modals = document.querySelectorAll('.modal');
   document.addEventListener('keydown', function (evt) {
     if (evt.keyCode !== 27) {
       return;
