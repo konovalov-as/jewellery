@@ -62,6 +62,7 @@
   // filter open button
   var openFilter = document.querySelector('.catalog__form-button');
   var filterForm = document.querySelector('.catalog__form');
+  console.log(filterForm)
   if (openFilter) {
     openFilter.addEventListener('click', function () {
       filterForm.classList.remove('catalog__form--hidden');
@@ -69,10 +70,12 @@
   }
 
   // filter close button
-  var closeFilterButton = filterForm.querySelector('.catalog__form-close button')
-  closeFilterButton.addEventListener('click', function () {
-    filterForm.classList.add('catalog__form--hidden');
-  });
+  if (filterForm) {
+    var closeFilterButton = filterForm.querySelector('.catalog__form-close button')
+    closeFilterButton.addEventListener('click', function () {
+      filterForm.classList.add('catalog__form--hidden');
+    });
+  }
 
   // open cart modal
   var bodyPage = document.querySelector('.body');
