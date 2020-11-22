@@ -1,8 +1,3 @@
-.user-menu__list {
-  margin-right: 3%;
-  order: -3;
-}
-
 .user-menu__link {
   font-weight: 500;
   font-size: 14px;
@@ -32,9 +27,22 @@
 @media (max-width: $tablet-width-only) {
   .user-menu__list {
     display: none;
-    order: -1;
     width: 100%;
-    margin-right: 0;
+  }
+
+  .user-menu__link {
+    font-size: 18px;
+    line-height: 23px;
+    color: white;
+
+    &:hover,
+    &:focus {
+      color: $base-color;
+    }
+
+    &:active {
+      color: rgba(0, 0, 0, 0.7);
+    }
   }
 
   .user-menu__icon {
@@ -50,19 +58,6 @@
 
     &:active {
       stroke: rgba(0, 0, 0, 0.7);
-    }
-  }
-
-  .user-menu__link {
-    color: white;
-
-    &:hover,
-    &:focus {
-      color: $base-color;
-    }
-
-    &:active {
-      color: rgba(0, 0, 0, 0.7);
     }
   }
 

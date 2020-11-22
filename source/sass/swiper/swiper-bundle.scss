@@ -1,3 +1,6 @@
+/* eslint-disable */
+/* stylelint-disable */
+
 /**
  * Swiper 6.3.5
  * Most modern mobile touch slider and framework with hardware accelerated transitions

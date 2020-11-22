@@ -4,8 +4,8 @@
 
 .about-us__link {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 21px;
+  font-size: 18px;
+  line-height: 23px;
   text-decoration: none;
   color: $base-color;
 
@@ -21,9 +21,6 @@
 
 @media (max-width: $tablet-width-only) {
   .about-us__list {
-    display: none;
-    width: 100%;
-    order: -2;
     margin-bottom: 40px;
   }
 
