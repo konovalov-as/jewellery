@@ -5,7 +5,7 @@
 .blog__article-list {
   display: grid;
   grid-template-rows: 1fr, 1fr;
-  grid-template-columns: 1fr, 1fr;
+  grid-template-columns: repeat(12, 1fr);
   grid-gap: 30px;
   grid-template-areas:
     "blog__article-item--one blog__article-item--three"
@@ -18,21 +18,31 @@
 .blog__article-item {
   display: flex;
   position: relative;
+  background-color: #f0eae4;
 }
 
 .blog__article-item--one {
   grid-area: "blog__article-item--one";
+  grid-row: 1;
+  grid-column: 1 / span 6;
 }
 
 .blog__article-item--two {
   grid-area: "blog__article-item--two";
+  grid-row: 2;
+  grid-column: 1 / span 6;
 }
 
 .blog__article-item--three {
   grid-area: "blog__article-item--three";
-  grid-row: 1/3;
-  grid-column: 2;
+  grid-row: 1 / span 2;
+  grid-column: 7 / span 6;
   justify-self: end;
+}
+
+.blog__article-image {
+  width: 50%;
+  align-self: center;
 }
 
 .blog__article-image img {
@@ -41,17 +51,27 @@
   height: 300px;
 }
 
+.blog__article-image--bigger {
+  width: 100%;
+}
+
 .blog__article-image--bigger img {
   width: 570px;
   height: 630px;
 }
 
 .blog__article-text {
-  max-width: 285px;
-  width: 100%;
+  width: 50%;
   background-color: #f0eae4;
   padding-top: 65px;
   padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.blog__article-text--bigger {
+  padding-top: 95px;
+  padding-bottom: 95px;
 }
 
 .blog__article-image--bigger + .blog__article-text {
@@ -101,9 +121,17 @@
     }
   }
 
+  .blog__article-item--two img {
+    margin-left: auto;
+  }
+
   .blog__article-image img {
     width: 339px;
     height: 300px;
+  }
+
+  .blog__article-image--bigger {
+    width: 50%;
   }
 
   .blog__article-image--bigger img {
@@ -119,9 +147,9 @@
     order: -1;
   }
 
-  .blog__article-text {
-    max-width: 339px;
-    width: 100%;
+  .blog__article-text--bigger {
+    padding-top: 65px;
+    padding-bottom: 65px;
   }
 }
 
@@ -134,6 +162,10 @@
     display: block;
   }
 
+  .blog__article-image {
+    width: 100%;
+  }
+
   .blog__article-image img {
     width: 100%;
     height: auto;
@@ -141,5 +173,8 @@
 
   .blog__article-text {
     max-width: 100%;
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 40px;
   }
 }
