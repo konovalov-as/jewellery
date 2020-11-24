@@ -41,6 +41,11 @@
 
   // faq accordion
   var faqToggleButtons = document.querySelectorAll('.faq__arrow-link');
+  var faqAnswers = document.querySelectorAll('.faq__answer');
+  [].map.call(faqAnswers, function (faqAnswer) {
+    faqAnswer.classList.add('faq__answer--hidden');
+  });
+
   [].map.call(faqToggleButtons, function (faqButton) {
     faqButton.addEventListener('click', function (evt) {
       evt.preventDefault();
@@ -50,6 +55,10 @@
   });
 
   // filter accordion
+  var filterContainers = document.querySelectorAll('.catalog__form-list--js');
+  [].map.call(filterContainers, function (filterContainer) {
+    filterContainer.classList.add('catalog__form-list--hidden');
+  });
   var filterToggleButtons = document.querySelectorAll('.catalog__form-link');
   [].map.call(filterToggleButtons, function (filterButton) {
     filterButton.addEventListener('click', function (evt) {
