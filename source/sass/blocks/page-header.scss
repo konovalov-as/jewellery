@@ -29,13 +29,14 @@
     "search logo user-menu user-cart"
     "nav nav nav nav";
   align-items: center;
-  padding-top: 30px;
+  padding-top: 28px;
 }
 
 .page-header__search {
   grid-area: "search";
   grid-row: 1;
   grid-column: 1 / span 2;
+  // margin-top: 9px;
 }
 
 .page-header__logo {
@@ -43,6 +44,14 @@
   grid-row: 1;
   grid-column: 6 / span 2;
   justify-self: center;
+}
+
+.page-header__list {
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .page-header__list--nav {
@@ -63,8 +72,10 @@
 .page-header__list--user-menu {
   grid-area: "user-menu";
   grid-row: 1;
-  grid-column: 11;
-  justify-self: end;
+  grid-column: 11 / span 2;
+  justify-self: center;
+  // margin-top: 9px;
+  margin-right: 30px;
 }
 
 .page-header__list--user-cart {
@@ -72,6 +83,7 @@
   grid-row: 1;
   grid-column: 12;
   justify-self: end;
+  // margin-top: 9px;
 }
 
 .page-header__svg-logo {
@@ -134,14 +146,6 @@
   padding-bottom: 0;
   border-top: none;
   border-bottom: none;
-}
-
-.page-header__list {
-  font-weight: 500;
-  line-height: 24px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 @media (max-width: 1085px) {
