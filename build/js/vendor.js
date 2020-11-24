@@ -9451,7 +9451,7 @@ var swiper = new Swiper('.new__slider-content', {
     el: '.new__slider-count',
     clickable: true,
     renderBullet: function (index, className) {
-      return '<button class="' + className + '">' + (index + 1) + '</button>';
+      return '<button class="' + className + '" aria-label="Slide ' + (index + 1) + '">' + (index + 1) + '</button>';
     },
   },
   navigation: {
