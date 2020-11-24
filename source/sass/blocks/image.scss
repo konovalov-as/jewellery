@@ -1,14 +1,17 @@
 .image__list {
   display: grid;
-  grid-template-rows: 1fr, 1fr, 1fr;
-  grid-template-columns: auto, auto;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, auto);
   grid-gap: 30px;
   grid-template-areas:
     "image__item--two image__item--one"
     "image__item--three image__item--one"
     "image__item--four image__item--one";
   list-style: none;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-right: 0;
   padding: 0;
 }
 
