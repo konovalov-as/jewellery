@@ -2117,21 +2117,22 @@ ul.catalog__form-list--pice {
   .card__item {
     margin-right: 15px; } }
 
-@media (max-width: 1205px) {
+@media (max-width: 1210px) {
   .card__item {
-    margin-right: 20px; }
-    .card__item:nth-child(3n) {
-      margin-right: 20px; }
-    .card__item:nth-child(2n) {
-      margin-right: 0; } }
+    margin-right: 20px;
+    max-width: 250px; } }
+
+@media (max-width: 1160px) {
+  .card__item {
+    max-width: 220px; } }
+
+@media (max-width: 1060px) {
+  .card__item {
+    max-width: 190px; } }
 
 @media (max-width: 1023px) {
   .card__item {
     max-width: 206px; }
-    .card__item:nth-child(2n) {
-      margin-right: 30px; }
-    .card__item:nth-child(3n) {
-      margin-right: 0; }
   .card__image img {
     width: 206px;
     height: 208px; } }
