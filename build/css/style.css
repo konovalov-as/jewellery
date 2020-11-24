@@ -2427,10 +2427,16 @@ ul.catalog__form-list--pice {
     max-width: 310px; } }
 
 @media (max-width: 1023px) {
+  .product__wrapper {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   .product__image {
-    margin-right: 35px; }
+    width: 50%;
+    margin-right: 40px; }
   .product__text {
-    max-width: 319px;
+    max-width: 100%;
+    width: 50%;
     margin-right: 0; } }
 
 @media (max-width: 767px) {
@@ -2438,7 +2444,12 @@ ul.catalog__form-list--pice {
     display: block;
     margin-top: 0; }
   .product__image {
-    margin-right: 0; }
+    max-width: 100%;
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 50px; }
+  .product__text {
+    width: 100%; }
   .product__condition {
     text-align: center; } }
 
@@ -2451,7 +2462,7 @@ ul.catalog__form-list--pice {
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
-  margin-right: 0;
+  margin-left: 0;
   margin-right: 0;
   padding: 0; }
 
@@ -2481,19 +2492,19 @@ ul.catalog__form-list--pice {
 
 @media (max-width: 1023px) {
   .image__list {
-    grid-template-rows: auto, auto;
-    grid-template-columns: 1fr, 1fr, 1fr;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 14px;
     grid-template-areas: "image__item--one image__item--one image__item--one" "image__item--two image__item--three image__item--four"; }
   .image__item--one {
     grid-row: 1;
     grid-column: 1/4; }
   .image__big img {
-    width: 319px;
-    height: 286px; }
+    width: 100%;
+    height: auto; }
   .image__small img {
-    width: 97px;
-    height: 129px; } }
+    width: 100%;
+    height: auto; } }
 
 @media (max-width: 767px) {
   .image {
@@ -2506,8 +2517,7 @@ ul.catalog__form-list--pice {
     -webkit-transition: -webkit-transform 0.6s ease;
     transition: -webkit-transform 0.6s ease;
     transition: transform 0.6s ease;
-    transition: transform 0.6s ease, -webkit-transform 0.6s ease;
-    margin-bottom: 50px; }
+    transition: transform 0.6s ease, -webkit-transform 0.6s ease; }
   .image__item {
     -webkit-box-flex: 0;
         -ms-flex-positive: 0;
@@ -2518,11 +2528,11 @@ ul.catalog__form-list--pice {
         flex-basis: 100%;
     max-width: 100%; }
   .image__big img {
-    width: 290px;
-    height: 260px; }
+    width: 100%;
+    height: auto; }
   .image__small img {
-    width: 290px;
-    height: 260px; } }
+    width: 100%;
+    height: auto; } }
 
 .cart__label {
   font-family: "Cormorant Garamond", "Georgia", serif;
