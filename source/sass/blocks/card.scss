@@ -6,9 +6,8 @@
 
 .card__item {
   display: flex;
-  flex-direction: column;
   max-width: 270px;
-  margin-bottom: 37px;
+  margin-bottom: 34px;
   margin-right: 30px;
 
   &:nth-child(3n) {
@@ -17,9 +16,6 @@
 }
 
 .card__link {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
   font-weight: 500;
   line-height: 21px;
   text-align: center;
@@ -98,6 +94,7 @@
   .card__item {
     max-width: 320px;
     margin-right: 30px;
+    margin-bottom: 23px;
     width: 100%;
 
     &:nth-child(3n) {
@@ -112,6 +109,11 @@
   .card__image img {
     width: 100%;
     height: auto;
+    margin-bottom: 16px;
+  }
+
+  .card__label {
+    margin-bottom: 6px;
   }
 }
 

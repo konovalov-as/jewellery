@@ -71,7 +71,19 @@
   }
 
   .social__item {
-    margin-bottom: 10px;
+    margin-bottom: 0;
+  }
+
+  .social__item--fb {
+    padding-left: 0;
+  }
+
+  .social__link svg {
+    margin-right: 30px;
+  }
+
+  .social__label {
+    font-size: 0;
   }
 
   .social__label--fb + svg {

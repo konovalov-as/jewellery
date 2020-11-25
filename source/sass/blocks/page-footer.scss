@@ -127,21 +127,31 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .page-footer {
+    padding-bottom: 50px;
+  }
+
   .page-footer__title {
     max-width: 220px;
+    margin-bottom: 14px;
   }
 
   .page-footer__description {
     max-width: 230px;
+    margin-bottom: 35px;
   }
 
   .page-footer__right {
     display: block;
   }
 
-  .page-footer__list-1,
+  .page-footer__list-1 {
+    margin-right: 0;
+    margin-bottom: 37px;
+  }
+
   .page-footer__list-2 {
     margin-right: 0;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
   }
 }

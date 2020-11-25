@@ -4,20 +4,21 @@
   font-size: 26px;
   line-height: 34px;
   text-align: center;
-  margin-top: 55px;
-  margin-bottom: 55px;
+  margin-top: 48px;
+  margin-bottom: 35px;
   margin-left: 20px;
   margin-right: 20px;
 }
 
 .cart__wrapper {
   display: flex;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
   margin-left: 35px;
-  margin-right: 33px;
+  margin-right: 0;
 }
 
 .cart__image {
+  margin-top: 10px;
   margin-right: 20px;
 }
 
@@ -29,6 +30,8 @@
 .cart__inner {
   max-width: 270px;
   width: 100%;
+  margin-top: 5px;
+  margin-right: 44px;
 }
 
 .cart__title {
@@ -37,7 +40,7 @@
   font-size: 18px;
   line-height: 23px;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 9px;
 }
 
 .cart__price {
@@ -86,8 +89,8 @@
 
 .cart__inner-2 {
   border-top: 1px solid #f6f5f4;
-  padding-top: 20px;
-  padding-bottom: 55px;
+  padding-top: 16px;
+  padding-bottom: 45px;
   padding-left: 35px;
   padding-right: 35px;
 }
@@ -111,7 +114,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 40px;
+  margin-bottom: 26px;
 }
 
 .cart__actions {

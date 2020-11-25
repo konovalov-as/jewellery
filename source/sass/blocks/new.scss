@@ -168,8 +168,20 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .new__wrapper {
+    margin-bottom: 62px;
+  }
+
   .new__item-wrapper {
     width: 100%;
+  }
+
+  .new__item-image {
+    margin-bottom: 16px;
+  }
+
+  .new__slider-content {
+    margin-bottom: 10px;
   }
 
   .new__slider-button {

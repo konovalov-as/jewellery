@@ -53,11 +53,6 @@
     }
   }
 
-  .page-hero__slogan {
-    letter-spacing: -0.5px;
-    margin-right: 19px;
-  }
-
   .page-hero--catalog {
     background-image: url("../img/bg-hero-tablet-catalog@1x.jpg");
     margin-bottom: 50px;
@@ -70,6 +65,7 @@
 
 @media (max-width: $mobile-width-only) {
   .page-hero {
+    margin-bottom: 40px;
     background-image: url("../img/bg-hero-mobile-index@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -86,18 +82,13 @@
   }
 
   .page-hero__slogan {
-    font-size: 34px;
-    line-height: 44px;
-  }
-}
-
-@media (max-width: $mobile-width-only) {
-  .page-hero {
-    margin-bottom: 80px;
+    font-size: 27px;
   }
 
   .page-hero__slogan--catalog {
     font-size: 22px;
     line-height: 26px;
+    letter-spacing: 0;
+    margin-right: 0;
   }
 }

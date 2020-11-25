@@ -173,20 +173,35 @@
   .product__wrapper {
     display: block;
     margin-top: 0;
+    margin-bottom: 56px;
   }
 
   .product__image {
     max-width: 100%;
     width: 100%;
+    margin-top: 0;
     margin-right: 0;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+  }
+
+  .product__price {
+    margin-bottom: 26px;
   }
 
   .product__text {
     width: 100%;
   }
 
+  .product__ch-list {
+    margin-bottom: 40px;
+  }
+
+  .product__add-cart {
+    margin-bottom: 12px;
+  }
+
   .product__condition {
     text-align: center;
+    max-width: 60px;
   }
 }

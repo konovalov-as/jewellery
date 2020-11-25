@@ -116,23 +116,36 @@
 
 @media (max-width: $mobile-width-only) {
   .faq__wrapper {
-    margin-bottom: 70px;
+    margin-bottom: 52px;
   }
 
   .faq__arrow-link {
-    padding-top: 22px;
-    padding-bottom: 24px;
+    padding-top: 15px;
+    padding-bottom: 21px;
     padding-left: 25px;
     padding-right: 25px;
   }
 
   .faq__question {
+    display: block;
     font-size: 16px;
     line-height: 22px;
   }
 
+  .faq__question--material {
+    max-width: 185px;
+  }
+
+  .faq__question--deliver {
+    max-width: 155px;
+  }
+
+  .faq__question--pay {
+    max-width: 170px;
+  }
+
   .faq__answer {
-    margin-top: 25px;
+    margin-top: 16px;
     font-size: 14px;
     line-height: 20px;
   }

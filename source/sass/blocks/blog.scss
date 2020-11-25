@@ -159,11 +159,12 @@
 
 @media (max-width: $mobile-width-only) {
   .blog__wrapper {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
   }
 
   .blog__article-item {
     display: block;
+    margin-bottom: 40px;
   }
 
   .blog__article-image {
@@ -179,6 +180,11 @@
     max-width: 100%;
     width: 100%;
     padding-top: 45px;
-    padding-bottom: 40px;
+    padding-bottom: 52px;
+  }
+
+  .blog__article-text--bigger {
+    padding-top: 63px;
+    padding-bottom: 68px;
   }
 }

@@ -231,6 +231,8 @@
   .page-header__menu {
     grid-template-columns: repeat(5, 1fr);
     grid-column-gap: 20px;
+    padding-top: 18px;
+    padding-bottom: 15px;
   }
 
   .page-header__search {

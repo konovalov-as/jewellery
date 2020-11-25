@@ -78,22 +78,30 @@
 
 @media (max-width: $mobile-width-only) {
   .link-type1--new-in {
-    max-width: 80px;
+    max-width: 100%;
+    margin-bottom: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: none;
+    line-height: 20px;
+    height: auto;
+  }
+
+  .link-type1--new-in .link-type1__label {
+    max-width: 100%;
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px solid #a87b62;
   }
 
-  .link-type1--new-in .link-type1__label {
-    max-width: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    border-bottom: none;
-  }
-
   .link-type1--blog {
     max-width: 100%;
     border-bottom: none;
+    margin-bottom: 53px;
+  }
+
+  .link-type1--ch {
+    margin-bottom: 50px;
   }
 
   .link-type1--blog .link-type1__label {

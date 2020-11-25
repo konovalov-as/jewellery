@@ -84,8 +84,8 @@
 
 @media (max-width: $tablet-width-only) {
   .pagination__wrapper {
-    padding-top: 34px;
-    padding-bottom: 72px;
+    padding-top: 14px;
+    padding-bottom: 63px;
     padding-left: 45px;
   }
 }
@@ -98,5 +98,13 @@
 
   .pagination__link {
     display: none;
+  }
+
+  .pagination__item {
+    margin-right: 23px;
+  }
+
+  .pagination__list {
+    margin-right: 0;
   }
 }
