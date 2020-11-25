@@ -45,6 +45,7 @@
 
 @media (max-width: $tablet-width-only) {
   .page-hero {
+    margin-bottom: 70px;
     background-image: url("../img/bg-hero-tablet-index@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -52,8 +53,14 @@
     }
   }
 
+  .page-hero__slogan {
+    letter-spacing: -0.5px;
+    margin-right: 19px;
+  }
+
   .page-hero--catalog {
     background-image: url("../img/bg-hero-tablet-catalog@1x.jpg");
+    margin-bottom: 50px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-hero-tablet-catalog@2x.jpg");

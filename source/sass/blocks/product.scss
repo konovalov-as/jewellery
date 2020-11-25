@@ -146,6 +146,8 @@
 @media (max-width: $tablet-width-only) {
   .product__wrapper {
     justify-content: center;
+    margin-top: 21px;
+    margin-bottom: 71px;
   }
 
   .product__image {
@@ -157,6 +159,13 @@
     max-width: 100%;
     width: 50%;
     margin-right: 0;
+  }
+
+  .product__condition {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #9b9997;
   }
 }
 

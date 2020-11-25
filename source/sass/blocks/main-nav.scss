@@ -51,8 +51,11 @@
   }
 
   .main-nav__list {
-    display: none;
-    margin-bottom: 40px;
+    // display: none;
+    padding-left: 0;
+    padding-right: 0;
+    transform: translateX(0);
+    margin-bottom: 22px;
   }
 
   .main-nav__item {

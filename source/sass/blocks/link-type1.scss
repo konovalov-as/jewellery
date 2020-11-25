@@ -58,8 +58,21 @@
 }
 
 @media (max-width: $tablet-width-only) {
-  .link-type1 {
-    // margin-bottom: 50px;
+  .link-type1--new-in {
+    margin-bottom: 52px;
+  }
+
+  .link-type1--blog {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 63px;
+
+    border-bottom: none;
+  }
+
+  .link-type1__label--blog {
+    border-bottom: 1px solid #a87b62;
+    padding-bottom: 3px;
   }
 }
 

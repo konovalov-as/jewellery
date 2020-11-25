@@ -90,12 +90,22 @@
 
 @media (max-width: $tablet-width-only) {
   .faq__wrapper {
-    margin-bottom: 83px;
+    margin-bottom: 67px;
   }
 
   .faq__list {
     margin-left: 0;
     margin-right: 0;
+  }
+
+  .faq__arrow-link {
+    padding-left: 48px;
+  }
+
+  .faq__answer {
+    max-width: 530px;
+    margin-top: 25px;
+    margin-left: 0;
   }
 
   .faq__arrow svg {

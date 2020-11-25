@@ -136,21 +136,21 @@
 
 @media (max-width: $tablet-width-only) {
   .new__wrapper {
-    margin-bottom: 80px;
-  }
-
-  .new__slider-content {
-    margin-bottom: 50px;
+    margin-bottom: 73px;
   }
 
   .new__item-image {
-    margin-bottom: 19px;
+    margin-bottom: 21px;
   }
 
   .new__item-image img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .new__slider-content {
+    margin-bottom: 40px;
   }
 
   .new__slider-button svg {
