@@ -9,6 +9,19 @@
   margin-bottom: 35px;
 }
 
+.title-h2--new {
+  margin-bottom: 22px;
+}
+
+.title-h2--blog {
+  margin-bottom: 4px;
+}
+
+.title-h2--faq {
+  letter-spacing: 1.01px;
+  margin-bottom: 48px;
+}
+
 .title-h2--catalog {
   margin-top: 92px;
   margin-bottom: 2px;
@@ -21,13 +34,26 @@
   line-height: 58px;
   letter-spacing: 0.03em;
   color: white;
-  margin-bottom: 20px;
   margin-top: 180px;
+  margin-bottom: 0;
   text-transform: uppercase;
 }
 
 .title-h2--ch {
-  margin-bottom: 24px;
+  margin-bottom: 13px;
+  letter-spacing: 1.02px;
+}
+
+.title-h2__prefix {
+  font-family: $alternative-1-font-family;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 55px;
+  letter-spacing: 1.25px;
+}
+
+.title-h2--like {
+  margin-bottom: 17px;
 }
 
 @media (max-width: $mobile-width-only) {

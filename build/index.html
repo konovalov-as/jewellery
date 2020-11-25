@@ -30,7 +30,7 @@
               </button>
             </form>
           </div>
-          <a class="page-header__logo">
+          <a class="page-header__logo page-header__logo--page">
             <span class="visually-hidden">Chjewellery - The Jewellery Store</span>
             <svg class="page-header__svg-logo" width="66" height="66">
               <use xlink:href="img/sprite_auto.svg#logo"></use>
@@ -107,7 +107,7 @@
 
       <section class="new">
         <div class="new__wrapper container">
-          <h2 class="title-h2">New In</h2>
+          <h2 class="title-h2 title-h2--new">New In</h2>
           <div class="link-type1 link-type1--new-in">
             <a class="link-type1__label" href="catalog.html">Shop Now</a>
           </div>
@@ -365,7 +365,7 @@
 
       <section class="blog">
         <div class="blog__wrapper container">
-          <h2 class="title-h2">Blog</h2>
+          <h2 class="title-h2 title-h2--blog">Blog</h2>
           <div class="link-type1 link-type1--blog">
             <a class="link-type1__label link-type1__label--blog" href="#">Read All</a>
           </div>
@@ -389,7 +389,7 @@
                   <span class="blog__article-date">September 30, 2019</span>
                   <p class="blog__article-title">How to care for your jewellery</p>
                   <div class="link-type1">
-                    <a class="link-type1__label" href="#">Read All</a>
+                    <a class="link-type1__label link-type1__label--article" href="#">Read Article</a>
                   </div>
                 </div>
               </li>
@@ -411,7 +411,7 @@
                   <span class="blog__article-date">September 23, 2019</span>
                   <p class="blog__article-title">Power of crystals</p>
                   <div class="link-type1">
-                    <a class="link-type1__label" href="#">Read All</a>
+                    <a class="link-type1__label link-type1__label--article" href="#">Read Article</a>
                   </div>
                 </div>
               </li>
@@ -433,7 +433,7 @@
                   <span class="blog__article-date">September 16, 2019</span>
                   <p class="blog__article-title">AW 19 trends</p>
                   <div class="link-type1">
-                    <a class="link-type1__label" href="#">Read All</a>
+                    <a class="link-type1__label link-type1__label--article" href="#">Read Article</a>
                   </div>
                 </div>
               </li>
@@ -648,12 +648,14 @@
               <span class="visually-hidden">Your E-mail</span>
               <input type="email" name="email" id="email" placeholder="Your E-mail" required="">
             </label>
-            <button type="submit">
-              <span>Sign Up</span>
-              <svg width="29" height="9">
-                <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
-              </svg>
-            </button>
+            <div class="sign-up-form__submit">
+              <button type="submit">
+                <span>Sign Up</span>
+                <svg width="29" height="9">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
           </form>
         </div>
         <div class="page-footer__right social">
@@ -686,7 +688,7 @@
             </li>
           </ul>
           <ul class="page-footer__list-3 social__list">
-            <li class="social__item">
+            <li class="social__item social__item--fb">
               <a class="social__link" href="#">
                 <span class="social__label social__label--fb">Facebook</span>
                 <svg width="8" height="15">

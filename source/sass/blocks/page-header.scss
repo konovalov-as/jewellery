@@ -46,6 +46,10 @@
   justify-self: center;
 }
 
+.page-header__logo--page {
+  transform: translateY(13px);
+}
+
 .page-header__list {
   font-weight: 500;
   line-height: 24px;

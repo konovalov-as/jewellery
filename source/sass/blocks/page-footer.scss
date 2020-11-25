@@ -1,7 +1,7 @@
 .page-footer {
   color: white;
   background-color: black;
-  padding-top: 100px;
+  padding-top: 90px;
   padding-bottom: 100px;
 }
 
@@ -10,7 +10,9 @@
 }
 
 .page-footer__left {
-  margin-right: 97px;
+  max-width: 502px;
+  width: 100%;
+  margin-right: 89px;
 }
 
 .page-footer__title {
@@ -18,20 +20,21 @@
   font-weight: bold;
   font-size: 34px;
   line-height: 44px;
-  letter-spacing: 1px;
+  letter-spacing: 0.8px;
   margin-top: 0;
-  margin-bottom: 25px;
+  margin-bottom: 9px;
 }
 
 .page-footer__description {
   line-height: 21px;
   color: #9b9997;
   margin-top: 0;
-  margin-bottom: 52px;
+  margin-bottom: 37px;
 }
 
 .page-footer__right {
   display: flex;
+  padding-top: 4px;
 }
 
 .page-footer__list-1,
@@ -42,13 +45,20 @@
   padding: 0;
 }
 
-.page-footer__list-1,
-.page-footer__list-2 {
+.page-footer__list-1 {
   margin-right: 80px;
 }
 
+.page-footer__list-2 {
+  margin-right: 97px;
+}
+
+.page-footer__list-3 {
+  padding-top: 3px;
+}
+
 .page-footer__item-1 {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .page-footer__link-1 {
@@ -70,7 +80,7 @@
 }
 
 .page-footer__item-2 {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .page-footer__link-2 {

@@ -4,6 +4,7 @@
 
 .social__link {
   display: flex;
+  align-items: baseline;
   font-weight: 500;
   line-height: 21px;
   color: white;
@@ -33,6 +34,14 @@
   order: -1;
   margin-right: 15px;
   fill: white;
+}
+
+.social__item--fb {
+  padding-left: 5px;
+}
+
+.social__item--fb svg {
+  margin-right: 19px;
 }
 
 .social__label--fb + svg {

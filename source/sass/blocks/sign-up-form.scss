@@ -31,7 +31,10 @@
   background-color: transparent;
   color: white;
   border: none;
-  padding: 0;
+  padding-top: 6px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 0;
   cursor: pointer;
 
   &:hover,
@@ -51,6 +54,11 @@
   &:active svg {
     stroke: #9b9997;
   }
+}
+
+.sign-up-form__submit span {
+  // display: inline-block;
+  margin-right: 8px;
 }
 
 .sign-up-form svg {

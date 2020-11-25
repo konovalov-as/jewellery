@@ -1,10 +1,10 @@
 .new__wrapper {
   position: relative;
-  margin-bottom: 130px;
+  margin-bottom: 123px;
 }
 
 .new__slider-content {
-  margin-bottom: 60px;
+  margin-bottom: 50px;
 }
 
 .new__list {
@@ -40,7 +40,7 @@
 }
 
 .new__item-image {
-  margin-bottom: 25px;
+  margin-bottom: 14px;
 }
 
 .new__item-label {
@@ -48,7 +48,7 @@
   line-height: 21px;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 15px;
+  margin-bottom: 6px;
 }
 
 .new__list .new__item-price {
@@ -76,7 +76,7 @@
   opacity: 1;
   background-color: transparent;
   cursor: pointer;
-  margin-right: 10px;
+  margin-right: 2px;
 
   &:last-child {
     margin-right: 0;
@@ -100,7 +100,7 @@
 
 .new__slider-button {
   position: absolute;
-  top: 0;
+  top: 40px;
   border: none;
   padding: 0;
   background-color: transparent;
@@ -117,7 +117,7 @@
 }
 
 .new__slider-prev-button {
-  left: 83px;
+  left: 98px;
 }
 
 .new__slider-next-button {

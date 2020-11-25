@@ -3,19 +3,24 @@
 }
 
 .link-type1--new-in {
-  margin-bottom: 60px;
+  margin-bottom: 58px;
 }
 
 .link-type1--blog {
-  max-width: 45px;
-  margin-bottom: 60px;
+  max-width: 65px;
+  height: 44px;
+  margin-bottom: 57px;
   margin-left: auto;
   margin-right: auto;
   border-bottom: 1px solid #a87b62;
 }
 
 .link-type1--ch {
-  margin-bottom: 60px;
+  margin-bottom: 64px;
+}
+
+.link-type1--like {
+  margin-bottom: 63px;
 }
 
 .link-type1__label {
@@ -40,8 +45,16 @@
   border-bottom: none;
 }
 
+.link-type1__label--article {
+  padding-bottom: 3px;
+}
+
 .link-type1__label--ch {
   padding-bottom: 4px;
+}
+
+.link-type1__label--like {
+  padding-bottom: 3px;
 }
 
 @media (max-width: $tablet-width-only) {
