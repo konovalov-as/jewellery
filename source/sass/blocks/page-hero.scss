@@ -65,7 +65,7 @@
 
 @media (max-width: $mobile-width-only) {
   .page-hero {
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     background-image: url("../img/bg-hero-mobile-index@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -74,6 +74,7 @@
   }
 
   .page-hero--catalog {
+    margin-bottom: 40px;
     background-image: url("../img/bg-hero-mobile-catalog@1x.jpg");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

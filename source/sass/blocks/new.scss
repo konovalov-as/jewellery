@@ -1,5 +1,9 @@
 .new__wrapper {
   position: relative;
+  margin-bottom: 113px;
+}
+
+.new__wrapper--product {
   margin-bottom: 123px;
 }
 
@@ -136,6 +140,10 @@
 
 @media (max-width: $tablet-width-only) {
   .new__wrapper {
+    margin-bottom: 63px;
+  }
+
+  .new__wrapper--product {
     margin-bottom: 73px;
   }
 
@@ -169,6 +177,10 @@
 
 @media (max-width: $mobile-width-only) {
   .new__wrapper {
+    margin-bottom: 52px;
+  }
+
+  .new__wrapper--product {
     margin-bottom: 62px;
   }
 

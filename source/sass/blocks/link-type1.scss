@@ -78,19 +78,30 @@
 
 @media (max-width: $mobile-width-only) {
   .link-type1--new-in {
-    max-width: 100%;
-    margin-bottom: 45px;
+    width: 80px;
+    margin-bottom: 40px;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: none;
+    border-bottom: 1px solid #a87b62;
     line-height: 20px;
-    height: auto;
+    height: 37px;
   }
 
   .link-type1--new-in .link-type1__label {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    border-bottom: none;
+  }
+
+  .link-type1--like {
+    width: 100%;
+    border-bottom: none;
+    height: auto;
+    margin-bottom: 45px;
+  }
+
+  .link-type1--like .link-type1__label {
     border-bottom: 1px solid #a87b62;
   }
 
