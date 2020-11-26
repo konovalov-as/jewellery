@@ -41,8 +41,10 @@
     "sprite": "gulp sprite"
   },
   "browserslist": [
-    "last 2 versions",
+    "last 4 versions",
+    "> 1%",
     "IE 11",
+    "IE 10",
     "Firefox ESR"
   ],
   "editorconfig-cli": [

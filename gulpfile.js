@@ -21,13 +21,17 @@ var concat = require("gulp-concat");
 var ttf2woff = require("gulp-ttf2woff");
 var ttf2woff2 = require("gulp-ttf2woff2");
 var pug = require("gulp-pug");
+var autoprefixBrowsers = ['> 1%', 'last 2 versions', 'firefox >= 4', 'safari 7', 'safari 8', 'IE 8', 'IE 9', 'IE 10', 'IE 11'];
 
 gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
-    .pipe(postcss([autoprefixer()]))
+    .pipe(postcss([autoprefixer({
+      grid: "autoplace",
+      browsers: autoprefixBrowsers,
+    })]))
     .pipe(gulp.dest("build/css"))
     .pipe(csso())
     .pipe(rename("style.min.css"))
