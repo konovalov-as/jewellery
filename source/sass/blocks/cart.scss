@@ -173,9 +173,35 @@
 }
 
 @media (max-width: $tablet-width-only) {
+  .cart__wrapper {
+    margin-left: 29px;
+  }
+
   .cart__image img {
     width: 88px;
     height: auto;
+  }
+
+  .cart__inner {
+    margin-right: 50px;
+  }
+
+  .cart__form {
+    margin-top: 4px;
+  }
+
+  .cart__inner-2 {
+    padding-left: 29px;
+    padding-right: 29px;
+    padding-bottom: 45px;
+  }
+
+  .cart__continue {
+    max-width: 206px;
+  }
+
+  .cart__checkout {
+    max-width: 206px;
   }
 }
 

@@ -112,148 +112,154 @@
           <div class="catalog__left">
             <div class="catalog__form-wrapper">
               <button class="catalog__form-button" type="button">Filter</button>
-              <form class="catalog__form catalog__form--hidden" action="https://echo.htmlacademy.ru" method="post">
-                <ul class="catalog__form-group catalog__form-product">
-                  <li class="catalog__form-item">
-                    <a class="catalog__form-link catalog__form-link--opened">
-                      <span>
-                        Product
-                      </span>
-                      <svg width="15" height="8">
-                        <use xlink:href="img/sprite_auto.svg#icon-accordion-arrow"></use>
-                      </svg>
-                    </a>
-                    <ul>
-                      <li>
-                        <label class="field-checkbox">
-                          <input class="field-checkbox__input visually-hidden" type="checkbox" name="product-necklaces" id="product-necklaces" checked="">
-                          <span class="field-checkbox__indicator"></span>
-                          <span class="field-checkbox__label">Necklaces</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="field-checkbox">
-                          <input class="field-checkbox__input visually-hidden" type="checkbox" name="product-chokers" id="product-chokers" checked="">
-                          <span class="field-checkbox__indicator"></span>
-                          <span class="field-checkbox__label">Chokers</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="field-checkbox">
-                          <input class="field-checkbox__input visually-hidden" type="checkbox" name="product-rings" id="product-rings">
-                          <span class="field-checkbox__indicator"></span>
-                          <span class="field-checkbox__label">Rings</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="field-checkbox">
-                          <input class="field-checkbox__input visually-hidden" type="checkbox" name="product-earrings" id="product-earrings" checked="">
-                          <span class="field-checkbox__indicator"></span>
-                          <span class="field-checkbox__label">Earrings</span>
-                        </label>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="catalog__form-item">
-                    <a class="catalog__form-link">
-                      <span>
-                        Material
-                      </span>
-                      <svg width="15" height="8">
-                        <use xlink:href="img/sprite_auto.svg#icon-accordion-arrow"></use>
-                      </svg>
-                    </a>
-                    <ul class="catalog__form-list catalog__form-list--js">
-                      <li>
-                        <label class="field-checkbox">
-                          <input class="field-checkbox__input visually-hidden" type="checkbox" name="material-gold" id="material-gold" checked="">
-                          <span class="field-checkbox__indicator"></span>
-                          <span class="field-checkbox__label">Gold</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="field-checkbox">
-                          <input class="field-checkbox__input visually-hidden" type="checkbox" name="material-silver" id="material-silver" disabled="">
-                          <span class="field-checkbox__indicator"></span>
-                          <span class="field-checkbox__label">Silver</span>
-                        </label>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="catalog__form-item">
-                    <a class="catalog__form-link">
-                      <span>
-                        Collection
-                      </span>
-                      <svg width="15" height="8">
-                        <use xlink:href="img/sprite_auto.svg#icon-accordion-arrow"></use>
-                      </svg>
-                    </a>
-                    <ul class="catalog__form-list catalog__form-list--js">
-                      <li>
-                        <label class="field-checkbox">
-                          <input class="field-checkbox__input visually-hidden" type="checkbox" name="collection-pink-flamingo" id="collection-pink-flamingo">
-                          <span class="field-checkbox__indicator"></span>
-                          <span class="field-checkbox__label">Pink flamingo</span>
-                        </label>
-                      </li>
-                      <li>
-                        <label class="field-checkbox">
-                          <input class="field-checkbox__input visually-hidden" type="checkbox" name="collection-dreams" id="collection-dreams">
-                          <span class="field-checkbox__indicator"></span>
-                          <span class="field-checkbox__label">Dreams</span>
-                        </label>
-                      </li>
-                    </ul>
-                  </li>
-                  <li class="catalog__form-item catalog__form-item--price">
-                    <a class="catalog__form-link catalog__form-link--opened">
-                      <span>
-                        Price
-                      </span>
-                      <svg width="15" height="8">
-                        <use xlink:href="img/sprite_auto.svg#icon-accordion-arrow"></use>
-                      </svg>
-                    </a>
-                    <ul class="catalog__form-list catalog__form-list--pice">
-                      <li>
-                        <div class="range-filter">
-                          <div class="range-filter__controls">
-                            <div class="range-filter__scale">
-                              <div class="range-filter__bar"></div>
-                            </div>
-                            <div class="range-filter__toggle range-filter__toggle-min"></div>
-                            <div class="range-filter__toggle range-filter__toggle-max"></div>
-                          </div>
-                          <div class="range-filter__price-controls">
-                            <label class="range-filter__min-price">$
-                              <input class="no-arrow" name="min-price" type="number" placeholder="55" min="0">
-                            </label>
-                            <label class="range-filter__max-price">$
-                              <input class="no-arrow" name="max-price" type="number" placeholder="155" min="0">
-                            </label>
-                          </div>
-                        </div>
-                      </li>
-                    </ul>
-                  </li>
-                </ul>
 
-                <div class="catalog__form-submit">
-                  <button type="submit">Apply</button>
+              <div class="modal modal--filter">
+                <div class="modal__content modal__content--filter">
+                  <form class="catalog__form" action="https://echo.htmlacademy.ru" method="post">
+                    <ul class="catalog__form-group catalog__form-product">
+                      <li class="catalog__form-item">
+                        <a class="catalog__form-link catalog__form-link--opened">
+                          <span>
+                            Product
+                          </span>
+                          <svg width="15" height="8">
+                            <use xlink:href="img/sprite_auto.svg#icon-accordion-arrow"></use>
+                          </svg>
+                        </a>
+                        <ul>
+                          <li>
+                            <label class="field-checkbox">
+                              <input class="field-checkbox__input visually-hidden" type="checkbox" name="product-necklaces" id="product-necklaces" checked="">
+                              <span class="field-checkbox__indicator"></span>
+                              <span class="field-checkbox__label">Necklaces</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="field-checkbox">
+                              <input class="field-checkbox__input visually-hidden" type="checkbox" name="product-chokers" id="product-chokers" checked="">
+                              <span class="field-checkbox__indicator"></span>
+                              <span class="field-checkbox__label">Chokers</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="field-checkbox">
+                              <input class="field-checkbox__input visually-hidden" type="checkbox" name="product-rings" id="product-rings">
+                              <span class="field-checkbox__indicator"></span>
+                              <span class="field-checkbox__label">Rings</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="field-checkbox">
+                              <input class="field-checkbox__input visually-hidden" type="checkbox" name="product-earrings" id="product-earrings" checked="">
+                              <span class="field-checkbox__indicator"></span>
+                              <span class="field-checkbox__label">Earrings</span>
+                            </label>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="catalog__form-item">
+                        <a class="catalog__form-link">
+                          <span>
+                            Material
+                          </span>
+                          <svg width="15" height="8">
+                            <use xlink:href="img/sprite_auto.svg#icon-accordion-arrow"></use>
+                          </svg>
+                        </a>
+                        <ul class="catalog__form-list catalog__form-list--js">
+                          <li>
+                            <label class="field-checkbox">
+                              <input class="field-checkbox__input visually-hidden" type="checkbox" name="material-gold" id="material-gold" checked="">
+                              <span class="field-checkbox__indicator"></span>
+                              <span class="field-checkbox__label">Gold</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="field-checkbox">
+                              <input class="field-checkbox__input visually-hidden" type="checkbox" name="material-silver" id="material-silver" disabled="">
+                              <span class="field-checkbox__indicator"></span>
+                              <span class="field-checkbox__label">Silver</span>
+                            </label>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="catalog__form-item">
+                        <a class="catalog__form-link">
+                          <span>
+                            Collection
+                          </span>
+                          <svg width="15" height="8">
+                            <use xlink:href="img/sprite_auto.svg#icon-accordion-arrow"></use>
+                          </svg>
+                        </a>
+                        <ul class="catalog__form-list catalog__form-list--js">
+                          <li>
+                            <label class="field-checkbox">
+                              <input class="field-checkbox__input visually-hidden" type="checkbox" name="collection-pink-flamingo" id="collection-pink-flamingo">
+                              <span class="field-checkbox__indicator"></span>
+                              <span class="field-checkbox__label">Pink flamingo</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="field-checkbox">
+                              <input class="field-checkbox__input visually-hidden" type="checkbox" name="collection-dreams" id="collection-dreams">
+                              <span class="field-checkbox__indicator"></span>
+                              <span class="field-checkbox__label">Dreams</span>
+                            </label>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="catalog__form-item catalog__form-item--price">
+                        <a class="catalog__form-link catalog__form-link--opened">
+                          <span>
+                            Price
+                          </span>
+                          <svg width="15" height="8">
+                            <use xlink:href="img/sprite_auto.svg#icon-accordion-arrow"></use>
+                          </svg>
+                        </a>
+                        <ul class="catalog__form-list catalog__form-list--pice">
+                          <li>
+                            <div class="range-filter">
+                              <div class="range-filter__controls">
+                                <div class="range-filter__scale">
+                                  <div class="range-filter__bar"></div>
+                                </div>
+                                <div class="range-filter__toggle range-filter__toggle-min"></div>
+                                <div class="range-filter__toggle range-filter__toggle-max"></div>
+                              </div>
+                              <div class="range-filter__price-controls">
+                                <label class="range-filter__min-price">$
+                                  <input class="no-arrow" name="min-price" type="number" placeholder="55" min="0">
+                                </label>
+                                <label class="range-filter__max-price">$
+                                  <input class="no-arrow" name="max-price" type="number" placeholder="155" min="0">
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    <div class="catalog__form-submit">
+                      <button type="submit">Apply</button>
+                    </div>
+                    <div class="catalog__form-reset">
+                      <button type="reset">Clear All</button>
+                    </div>
+                    <div class="catalog__form-close">
+                      <button type="button">
+                        <span class="visually-hidden">Close filter</span>
+                        <svg class="closeFilterSvg" width="32" height="32">
+                          <use xlink:href="img/sprite_auto.svg#icon-close-filter"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </form>
                 </div>
-                <div class="catalog__form-reset">
-                  <button type="reset">Clear All</button>
-                </div>
-                <div class="catalog__form-close">
-                  <button type="button">
-                    <span class="visually-hidden">Close filter</span>
-                    <svg class="closeFilterSvg" width="32" height="32">
-                      <use xlink:href="img/sprite_auto.svg#icon-close-filter"></use>
-                    </svg>
-                  </button>
-                </div>
-              </form>
+
+              </div>
             </div>
           </div>
           <div class="catalog__right card">

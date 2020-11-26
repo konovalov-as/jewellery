@@ -206,6 +206,7 @@ ul.catalog__form-list--pice {
   }
 
   .catalog__form {
+    max-width: 423px;
     position: absolute;
     top: 0;
     left: 0;
@@ -213,19 +214,60 @@ ul.catalog__form-list--pice {
     z-index: 10;
     background-color: white;
     box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24);
-    margin-left: 20px;
-    margin-right: 20px;
     padding-bottom: 40px;
+  }
+
+  .catalog__form-group {
+    margin-bottom: 40px;
   }
 
   .catalog__form-group .catalog__form-item {
     border-top: 1px solid #a87b62;
     border-left: none;
     border-right: none;
+    padding-top: 35px;
+    padding-bottom: 33px;
+    padding-left: 22px;
+    padding-right: 39px;
 
     &:first-child {
       border-top: none;
     }
+  }
+
+  .catalog__form-group .catalog__form-item--price {
+    padding-bottom: 35px;
+  }
+
+  .catalog__form-group span {
+    font-size: 18px;
+    line-height: 23px;
+    color: #1d1613;
+  }
+
+  .catalog__form-group ul {
+    margin-top: 21px;
+  }
+
+  .catalog__form-group li {
+    margin-bottom: 15px;
+  }
+
+  .catalog__form-submit button {
+    display: block;
+    width: 85.5%;
+    margin-left: 21px;
+    margin-right: 20px;
+    margin-bottom: 25px;
+  }
+
+  .catalog__form-reset button {
+    display: block;
+    width: 85.5%;
+    margin-left: 21px;
+    margin-right: 20px;
+    padding-top: 23px;
+    padding-bottom: 21px;
   }
 
   .catalog__form-close button {
@@ -244,21 +286,18 @@ ul.catalog__form-list--pice {
     }
 
     &:active svg {
-      opacity: 0.5;
+      opacity: 0.3;
     }
+  }
+
+  .catalog__form-link svg {
+    width: 25px;
+    height: 15px;
   }
 
   .closeFilterSvg {
     width: 32px;
     height: 32px;
-  }
-
-  .circle {
-    fill: $base-color;
-  }
-
-  .close {
-    fill: white;
   }
 
   .catalog__form-button {
@@ -287,8 +326,8 @@ ul.catalog__form-list--pice {
     }
   }
 
-  .catalog__form--hidden {
-    display: none;
+  ul.catalog__form-list--pice {
+    margin-top: 32px;
   }
 
   .catalog__right {
@@ -307,11 +346,49 @@ ul.catalog__form-list--pice {
     margin-bottom: 40px;
   }
 
+  .catalog__form {
+    max-width: 268px;
+  }
+
+  .catalog__form-group {
+    margin-bottom: 30px;
+  }
+
+  .catalog__form-group ul {
+    margin-top: 22px;
+  }
+
+  ul.catalog__form-list--pice {
+    margin-top: 33px;
+  }
+
+  .catalog__form-group .catalog__form-item {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    padding-left: 21px;
+    padding-right: 16px;
+  }
+
+  .catalog__form-reset button {
+    width: 85.7%;
+    margin-left: 21px;
+  }
+
+  .catalog__form-submit button {
+    width: 85.7%;
+    margin-left: 21px;
+    margin-bottom: 20px;
+  }
+
   .catalog__pagination {
     border-top: none;
   }
 
   .catalog__right {
     max-width: 100%;
+  }
+
+  .catalog__form-close button {
+    right: -12px;
   }
 }

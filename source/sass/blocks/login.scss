@@ -1,6 +1,6 @@
 .login__wrapper {
   padding-top: 190px;
-  padding-bottom: 77px;
+  padding-bottom: 53px;
   padding-left: 45px;
   padding-right: 45px;
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@
   line-height: 44px;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 45px;
+  margin-bottom: 21px;
 }
 
 .login__form-field input {
@@ -52,12 +52,12 @@
 }
 
 .login__form-field-email {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
 }
 
 .login__form-forgot-pwd {
   text-align: right;
-  margin-bottom: 50px;
+  margin-bottom: 43px;
 }
 
 .login__form-forgot-pwd a {
@@ -88,7 +88,7 @@
   color: white;
   background-color: #a87b62;
   border: 1px solid #a87b62;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
   padding-top: 23px;
   padding-bottom: 22px;
   padding-left: 10px;
@@ -123,6 +123,7 @@
   font-size: 14px;
   line-height: 21px;
   color: $base-color;
+  text-decoration: none;
 
   &:hover,
   &:focus {
@@ -132,5 +133,51 @@
 
   &:focus {
     color: rgba(0, 0, 0, 0.7);
+  }
+}
+
+@media (max-width: $tablet-width-only) {
+  .login__wrapper {
+    background-size: 442px 138px;
+  }
+
+  .login__form {
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+
+@media (max-width: $tablet-width-only) {
+  .login__wrapper {
+    background-size: 270px 84px;
+    padding-top: 121px;
+    padding-bottom: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .login__wrapper .modal__close {
+    top: 15px;
+    right: 15px;
+  }
+
+  .login__title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 31px;
+    margin-bottom: 17px;
+  }
+
+  .login__form {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .login__form-field-email {
+    margin-bottom: 20px;
+  }
+
+  .login__form-forgot-pwd {
+    margin-bottom: 33px;
   }
 }

@@ -70,10 +70,11 @@
 
   // filter open button
   var openFilter = document.querySelector('.catalog__form-button');
-  var filterForm = document.querySelector('.catalog__form');
+  var filterForm = document.querySelector('.modal--filter');
   if (openFilter) {
     openFilter.addEventListener('click', function () {
-      filterForm.classList.remove('catalog__form--hidden');
+      filterForm.classList.add('modal--show');
+      bodyPage.classList.add('modal--open');
     });
   }
 
@@ -81,7 +82,8 @@
   if (filterForm) {
     var closeFilterButton = filterForm.querySelector('.catalog__form-close button');
     closeFilterButton.addEventListener('click', function () {
-      filterForm.classList.add('catalog__form--hidden');
+      filterForm.classList.remove('modal--show');
+      bodyPage.classList.remove('modal--open');
     });
   }
 

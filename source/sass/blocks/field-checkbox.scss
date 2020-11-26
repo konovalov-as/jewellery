@@ -60,3 +60,17 @@
     color: rgba(0, 0, 0, 0.7);
   }
 }
+
+@media (max-width: $tablet-width-only) {
+  .field-checkbox__label {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.8px;
+  }
+
+  .field-checkbox__input + .field-checkbox__indicator {
+    width: 18px;
+    height: 18px;
+  }
+}
