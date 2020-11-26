@@ -2290,8 +2290,8 @@ ul.catalog__form-list--pice {
 
 .card__image img {
   display: block;
-  width: 270px;
-  height: 272px;
+  width: 100%;
+  height: auto;
   margin-bottom: 21px; }
 
 .card__label {
@@ -2340,6 +2340,8 @@ ul.catalog__form-list--pice {
       margin-right: 30px; }
     .card__item:nth-child(2n) {
       margin-right: 0; }
+  .card__link {
+    width: 100%; }
   .card__image img {
     width: 100%;
     height: auto;
@@ -3065,12 +3067,25 @@ ul.catalog__form-list--pice {
 
 @media (max-width: 1023px) {
   .login__wrapper {
-    background-size: 442px 138px; }
+    background-size: 430px 138px;
+    padding-top: 188px;
+    padding-bottom: 54px;
+    padding-left: 39px;
+    padding-right: 39px; }
+  .login__wrapper .modal__close {
+    top: 20px;
+    right: 14px; }
+  .login__title {
+    margin-bottom: 23px; }
   .login__form {
     padding-left: 6px;
-    padding-right: 6px; } }
+    padding-right: 6px; }
+  .login__form-field-email {
+    margin-bottom: 25px; }
+  .login__form-forgot-pwd {
+    margin-bottom: 43px; } }
 
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   .login__wrapper {
     background-size: 270px 84px;
     padding-top: 121px;
@@ -3078,7 +3093,7 @@ ul.catalog__form-list--pice {
     padding-left: 10px;
     padding-right: 10px; }
   .login__wrapper .modal__close {
-    top: 15px;
+    top: 16px;
     right: 15px; }
   .login__title {
     font-weight: bold;
@@ -3399,7 +3414,12 @@ ul.catalog__form-list--pice {
   z-index: 30; }
 
 .modal--filter {
-  background-color: white; }
+  background-color: white;
+  opacity: 1;
+  visibility: visible;
+  position: static;
+  -webkit-transform: none;
+          transform: none; }
 
 .modal__content {
   position: relative;
@@ -3418,9 +3438,11 @@ ul.catalog__form-list--pice {
   margin-top: 372px; }
 
 .modal__content--filter {
-  margin-top: 27px;
+  margin-top: 0;
   margin-left: 0;
-  margin-right: auto; }
+  margin-right: auto;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 .modal__close {
   position: absolute;
@@ -3441,19 +3463,44 @@ ul.catalog__form-list--pice {
   height: 14px; }
 
 @media (max-width: 1023px) {
+  .modal--filter {
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    -webkit-transform: scaleX(1.1) scaleY(1.1);
+            transform: scaleX(1.1) scaleY(1.1); }
   .modal__content--login {
-    max-width: 442px;
+    max-width: 430px;
     margin-top: 80px; }
   .modal__content--cart {
     margin-top: 258px; }
   .modal__content--filter {
     margin-top: 76px;
-    margin-left: 25px; } }
+    margin-left: 25px;
+    -webkit-box-shadow: 0 4px 32px rgba(121, 121, 121, 0.24);
+            box-shadow: 0 4px 32px rgba(121, 121, 121, 0.24); }
+  .modal__content--login svg {
+    width: 20px;
+    height: 20px; }
+  .modal--show {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: scaleX(1) scaleY(1);
+            transform: scaleX(1) scaleY(1);
+    -webkit-transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
+    z-index: 30; } }
 
 @media (max-width: 767px) {
   .modal__content--login {
     max-width: 270px;
-    margin-top: 49px; } }
+    margin-top: 49px; }
+  .modal__content--login svg {
+    width: 14px;
+    height: 14px; } }
 
 /* eslint-disable */
 /* stylelint-disable */

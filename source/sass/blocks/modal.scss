@@ -28,6 +28,10 @@
 
 .modal--filter {
   background-color: white;
+  opacity: 1;
+  visibility: visible;
+  position: static;
+  transform: none;
 }
 
 .modal__content {
@@ -49,9 +53,10 @@
 }
 
 .modal__content--filter {
-  margin-top: 27px;
+  margin-top: 0;
   margin-left: 0;
   margin-right: auto;
+  box-shadow: none;
 }
 
 // modal close button
@@ -80,8 +85,16 @@
 }
 
 @media (max-width: $tablet-width-only) {
+  .modal--filter {
+    background-color: white;
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    transform: scaleX(1.1) scaleY(1.1);
+  }
+
   .modal__content--login {
-    max-width: 442px;
+    max-width: 430px;
     margin-top: 80px;
   }
 
@@ -92,6 +105,20 @@
   .modal__content--filter {
     margin-top: 76px;
     margin-left: 25px;
+    box-shadow: 0 4px 32px rgba(121, 121, 121, 0.24);
+  }
+
+  .modal__content--login svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .modal--show {
+    opacity: 1;
+    visibility: visible;
+    transform: scaleX(1) scaleY(1);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 30;
   }
 }
 
@@ -99,5 +126,10 @@
   .modal__content--login {
     max-width: 270px;
     margin-top: 49px;
+  }
+
+  .modal__content--login svg {
+    width: 14px;
+    height: 14px;
   }
 }

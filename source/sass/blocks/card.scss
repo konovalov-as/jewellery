@@ -35,8 +35,8 @@
 
 .card__image img {
   display: block;
-  width: 270px;
-  height: 272px;
+  width: 100%;
+  height: auto;
   margin-bottom: 21px;
 }
 
@@ -104,6 +104,10 @@
     &:nth-child(2n) {
       margin-right: 0;
     }
+  }
+
+  .card__link {
+    width: 100%;
   }
 
   .card__image img {
