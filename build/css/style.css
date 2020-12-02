@@ -977,7 +977,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 22px; }
 
 .title-h2--blog {
-  margin-bottom: 4px; }
+  margin-bottom: 8px; }
 
 .title-h2--faq {
   letter-spacing: 1.01px;
@@ -1265,10 +1265,18 @@ input[type="radio"].visually-hidden {
 .new__slider-next-button {
   right: 98px; }
 
+.new__slider-prev-button--new-in {
+  top: 36px;
+  left: 80px;
+  width: 40px; }
+
 .new__slider-button svg {
   width: 29px;
   height: 9px;
   stroke: #a87b62; }
+
+.new__slider-prev-button--new-in svg {
+  width: 40px; }
 
 .new__slider-next-button svg {
   -webkit-transform: rotate(180deg);
@@ -1319,11 +1327,12 @@ input[type="radio"].visually-hidden {
 
 .link-type1--blog {
   max-width: 65px;
-  height: 44px;
-  margin-bottom: 57px;
+  height: 37px;
+  margin-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 1px solid #a87b62; }
+  border-bottom: 1px solid #a87b62;
+  line-height: 21px; }
 
 .link-type1--ch {
   margin-bottom: 64px; }
