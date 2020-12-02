@@ -49,7 +49,7 @@
 }
 
 .modal__content--cart {
-  margin-top: 372px;
+  margin-top: auto;
 }
 
 .modal__content--filter {
@@ -123,6 +123,15 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .modal--filter {
+    overflow-y: scroll;
+  }
+
+  .modal--cart {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .modal__content--login {
     max-width: 270px;
     margin-top: 49px;
@@ -135,8 +144,8 @@
 
   .modal__content--cart {
     margin-top: 117px;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .modal__content--cart .modal__close {

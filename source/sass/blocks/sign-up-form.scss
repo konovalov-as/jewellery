@@ -4,13 +4,18 @@
   border-bottom: 1px solid white;
 }
 
+.sign-up-form label {
+  width: 70%;
+}
+
 .sign-up-form input {
+  width: 100%;
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
   background-color: transparent;
   border: none;
-  color: #9b9997;
+  color: white;
   padding-top: 5px;
   padding-bottom: 10px;
   padding-right: 15px;
@@ -57,7 +62,6 @@
 }
 
 .sign-up-form__submit span {
-  // display: inline-block;
   margin-right: 8px;
 }
 

@@ -162,6 +162,30 @@
 }
 
 @media (max-width: $tablet-width-only) {
+  .page-header--bg-no-js {
+    background-color: #a87b62;
+  }
+
+  .page-header--bg-no-js .page-header__svg-logo {
+    stroke: white;
+  }
+
+  .page-header--bg-no-js .main-menu-toggle__svg-icon {
+    stroke: white;
+  }
+
+  .page-header--bg-no-js .user-menu__icon {
+    stroke: white;
+  }
+
+  .page-header--bg-no-js .search__form svg {
+    fill: white;
+  }
+
+  .page-header--bg .main-menu-toggle__svg-icon {
+    stroke: white;
+  }
+
   .page-header__menu {
     grid-template-rows: repeat(5, auto);
     grid-template-columns: repeat(6, 1fr);

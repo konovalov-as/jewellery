@@ -34,6 +34,10 @@
 }
 
 @media (max-width: $tablet-width-only) {
+  .main-nav--opened {
+    height: 100vh;
+  }
+
   .main-nav--opened .search {
     display: block;
   }

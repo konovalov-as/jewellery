@@ -615,6 +615,18 @@ input[type="radio"].visually-hidden {
         justify-self: end; } }
 
 @media (max-width: 1023px) {
+  .page-header--bg-no-js {
+    background-color: #a87b62; }
+  .page-header--bg-no-js .page-header__svg-logo {
+    stroke: white; }
+  .page-header--bg-no-js .main-menu-toggle__svg-icon {
+    stroke: white; }
+  .page-header--bg-no-js .user-menu__icon {
+    stroke: white; }
+  .page-header--bg-no-js .search__form svg {
+    fill: white; }
+  .page-header--bg .main-menu-toggle__svg-icon {
+    stroke: white; }
   .page-header__menu {
     -ms-grid-rows: (auto)[5];
     grid-template-rows: repeat(5, auto);
@@ -747,7 +759,7 @@ input[type="radio"].visually-hidden {
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
-  color: #9b9997;
+  color: #1d1613;
   border: none;
   padding: 0; }
   .search__form input:hover, .search__form input:focus {
@@ -860,6 +872,8 @@ input[type="radio"].visually-hidden {
     color: rgba(0, 0, 0, 0.7); }
 
 @media (max-width: 1023px) {
+  .main-nav--opened {
+    height: 100vh; }
   .main-nav--opened .search {
     display: block; }
   .main-nav--opened .main-nav__list {
@@ -3108,10 +3122,10 @@ ul.catalog__form-list--pice {
     grid-column: 1/4; }
   .image__big img {
     width: 100%;
-    height: auto; }
+    height: 319px; }
   .image__small img {
     width: 100%;
-    height: auto; } }
+    height: 97px; } }
 
 @media (max-width: 767px) {
   .image {
@@ -3687,13 +3701,17 @@ ul.catalog__form-list--pice {
           justify-content: space-between;
   border-bottom: 1px solid white; }
 
+.sign-up-form label {
+  width: 70%; }
+
 .sign-up-form input {
+  width: 100%;
   font-weight: 500;
   font-size: 14px;
   line-height: 21px;
   background-color: transparent;
   border: none;
-  color: #9b9997;
+  color: white;
   padding-top: 5px;
   padding-bottom: 10px;
   padding-right: 15px; }
@@ -3914,7 +3932,7 @@ ul.catalog__form-list--pice {
   margin-top: 100px; }
 
 .modal__content--cart {
-  margin-top: 372px; }
+  margin-top: auto; }
 
 .modal__content--filter {
   margin-top: 0;
@@ -3979,6 +3997,11 @@ ul.catalog__form-list--pice {
     z-index: 30; } }
 
 @media (max-width: 767px) {
+  .modal--filter {
+    overflow-y: scroll; }
+  .modal--cart {
+    padding-left: 15px;
+    padding-right: 15px; }
   .modal__content--login {
     max-width: 270px;
     margin-top: 49px; }
@@ -3987,8 +4010,8 @@ ul.catalog__form-list--pice {
     height: 14px; }
   .modal__content--cart {
     margin-top: 117px;
-    margin-left: 15px;
-    margin-right: 15px; }
+    margin-left: auto;
+    margin-right: auto; }
   .modal__content--cart .modal__close {
     top: 15px;
     right: 15px; } }
