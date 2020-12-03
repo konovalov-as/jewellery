@@ -113,8 +113,8 @@
   }
 
   .modal__content--filter {
-    margin-top: 76px;
-    margin-left: 25px;
+    margin-top: 27px;
+    margin-left: 0;
     box-shadow: 0 4px 32px rgba(121, 121, 121, 0.24);
   }
 
@@ -163,5 +163,12 @@
   .modal__content--cart .modal__close {
     top: 15px;
     right: 15px;
+  }
+
+  .modal__content--filter {
+    max-width: 100%;
+    margin-top: 76px;
+    margin-left: 25px;
+    margin-right: 25px;
   }
 }

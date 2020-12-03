@@ -63,15 +63,16 @@
 
   // filter no-js
   var modalFilter = bodyPage.querySelector('.modal--filter');
-  modalFilter.classList.remove('modal--filter-no-js');
-  modalFilter.querySelector('.modal__content--filter').classList.remove('modal__content--filter-no-js');
-  modalFilter.querySelector('.catalog__form').classList.remove('catalog__form--no-js');
-  var filterArrows = modalFilter.querySelectorAll('.catalog__form-link--opened-no-js');
-  [].map.call(filterArrows, function (filterArrow) {
-    filterArrow.classList.remove('catalog__form-link--opened-no-js');
-  });
-  modalFilter.querySelector('.catalog__form-close').classList.remove('catalog__form-close--no-js');
-
+  if (modalFilter) {
+    modalFilter.classList.remove('modal--filter-no-js');
+    modalFilter.querySelector('.modal__content--filter').classList.remove('modal__content--filter-no-js');
+    modalFilter.querySelector('.catalog__form').classList.remove('catalog__form--no-js');
+    var filterArrows = modalFilter.querySelectorAll('.catalog__form-link--opened-no-js');
+    [].map.call(filterArrows, function (filterArrow) {
+      filterArrow.classList.remove('catalog__form-link--opened-no-js');
+    });
+    modalFilter.querySelector('.catalog__form-close').classList.remove('catalog__form-close--no-js');
+  }
   // filter accordion
   var filterContainers = document.querySelectorAll('.catalog__form-list--js');
   [].map.call(filterContainers, function (filterContainer) {

@@ -24,10 +24,6 @@
 
 .catalog__form-group .catalog__form-item {
   margin-bottom: 0;
-  padding-top: 24px;
-  padding-bottom: 26px;
-  padding-left: 25px;
-  padding-right: 19px;
   border-top: 1px solid #a87b62;
   border-left: 1px solid #a87b62;
   border-right: 1px solid #a87b62;
@@ -35,11 +31,6 @@
   &:last-child {
     border-bottom: 1px solid #a87b62;
   }
-}
-
-.catalog__form-group .catalog__form-item--price {
-  padding-top: 23px;
-  padding-bottom: 16px;
 }
 
 .catalog__form-group span {
@@ -50,10 +41,7 @@
 
 .catalog__form-group ul {
   list-style: none;
-  margin-left: 9px;
-  margin-right: 10px;
-  margin-top: 25px;
-  margin-bottom: 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -65,10 +53,26 @@
   }
 }
 
+.catalog__form-item ul {
+  padding-bottom: 27px;
+  padding-left: 34px;
+  padding-right: 29px;
+}
+
+.catalog__form-item--price ul {
+  padding-bottom: 17px;
+}
+
 .catalog__form-link {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: $base-color;
+  text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 22px;
+  padding-left: 25px;
+  padding-right: 19px;
   cursor: pointer;
 
   &:hover,
@@ -83,6 +87,16 @@
   &:active svg {
     stroke: rgba(0, 0, 0, 0.7);
   }
+}
+
+.catalog__form-group .catalog__form-link--price {
+  padding-top: 23px;
+  padding-bottom: 26px;
+}
+
+.catalog__form-link span {
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .catalog__form-link svg {
@@ -234,28 +248,27 @@ ul.catalog__form-list--pice {
     border-top: 1px solid #a87b62;
     border-left: none;
     border-right: none;
-    padding-top: 35px;
-    padding-bottom: 33px;
-    padding-left: 22px;
-    padding-right: 39px;
 
     &:first-child {
       border-top: none;
     }
   }
 
-  .catalog__form-group .catalog__form-item--price {
-    padding-bottom: 35px;
+  .catalog__form-item ul {
+    margin-top: -10px;
+    padding-bottom: 37px;
+    padding-left: 31px;
+  }
+
+  .catalog__form-item--price ul {
+    margin-top: 0;
+    padding-top: 7px;
   }
 
   .catalog__form-group span {
     font-size: 18px;
     line-height: 23px;
     color: #1d1613;
-  }
-
-  .catalog__form-group ul {
-    margin-top: 21px;
   }
 
   .catalog__form-group li {
@@ -303,6 +316,18 @@ ul.catalog__form-list--pice {
     display: none;
   }
 
+  .catalog__form-link {
+    padding-top: 35px;
+    padding-bottom: 32px;
+    padding-left: 22px;
+    padding-right: 39px;
+  }
+
+  .catalog__form-group .catalog__form-link--price {
+    padding-bottom: 24px;
+    padding-top: 37px;
+  }
+
   .catalog__form-link svg {
     width: 25px;
     height: 15px;
@@ -339,10 +364,6 @@ ul.catalog__form-list--pice {
     }
   }
 
-  ul.catalog__form-list--pice {
-    margin-top: 32px;
-  }
-
   .catalog__right {
     margin-left: auto;
     margin-right: auto;
@@ -360,26 +381,29 @@ ul.catalog__form-list--pice {
   }
 
   .catalog__form {
-    max-width: 268px;
+    max-width: 100%;
   }
 
   .catalog__form-group {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 
   .catalog__form-group ul {
-    margin-top: 22px;
+    margin-top: 0;
+    padding-left: 30px;
+    padding-bottom: 29px;
   }
 
-  ul.catalog__form-list--pice {
-    margin-top: 33px;
-  }
-
-  .catalog__form-group .catalog__form-item {
+  .catalog__form-link {
     padding-top: 24px;
-    padding-bottom: 25px;
+    padding-bottom: 22px;
     padding-left: 21px;
     padding-right: 16px;
+  }
+
+  .catalog__form-group .catalog__form-link--price {
+    padding-top: 28px;
+    padding-bottom: 22px;
   }
 
   .catalog__form-reset button {
