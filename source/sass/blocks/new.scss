@@ -128,11 +128,21 @@
   right: 98px;
 }
 
+.new__slider-prev-button--new-in {
+  top: 36px;
+  left: 80px;
+  width: 40px;
+}
+
 .new__slider-button svg {
   width: 29px;
   height: 9px;
   stroke: #a87b62;
 }
+
+.new__slider-prev-button--new-in svg {
+  width: 40px;
+ }
 
 .new__slider-next-button svg {
   transform: rotate(180deg);
