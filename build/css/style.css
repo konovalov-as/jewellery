@@ -2355,6 +2355,12 @@ input[type="radio"].visually-hidden {
       -ms-transform: rotate(0deg);
           transform: rotate(0deg); }
 
+.catalog__form-link--opened-no-js svg {
+  -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+      -ms-transform: rotate(0deg);
+          transform: rotate(0deg); }
+
 .catalog__form-list--hidden {
   display: none; }
 
@@ -2449,6 +2455,10 @@ ul.catalog__form-list--pice {
     -webkit-box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24);
             box-shadow: 0 5px 32px rgba(219, 213, 208, 0.24);
     padding-bottom: 40px; }
+  .catalog__form--no-js {
+    position: static;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
   .catalog__form-group {
     margin-bottom: 40px; }
   .catalog__form-group .catalog__form-item {
@@ -2498,6 +2508,8 @@ ul.catalog__form-list--pice {
       opacity: 0.7; }
     .catalog__form-close button:active svg {
       opacity: 0.3; }
+  .catalog__form-close--no-js button {
+    display: none; }
   .catalog__form-link svg {
     width: 25px;
     height: 15px; }
@@ -3723,7 +3735,9 @@ ul.catalog__form-list--pice {
   color: white;
   padding-top: 5px;
   padding-bottom: 10px;
-  padding-right: 15px; }
+  padding-right: 15px;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
   .sign-up-form input:hover, .sign-up-form input:focus {
     color: #a87b62; }
   .sign-up-form input:active {
@@ -3970,6 +3984,7 @@ ul.catalog__form-list--pice {
 
 @media (max-width: 1023px) {
   .modal--filter {
+    overflow-y: scroll;
     background-color: white;
     opacity: 0;
     visibility: hidden;
@@ -3978,6 +3993,16 @@ ul.catalog__form-list--pice {
        -moz-transform: scaleX(1.1) scaleY(1.1);
         -ms-transform: scaleX(1.1) scaleY(1.1);
             transform: scaleX(1.1) scaleY(1.1); }
+  .modal--filter-no-js {
+    overflow-y: auto;
+    background-color: transparent;
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    -webkit-transform: none;
+       -moz-transform: none;
+        -ms-transform: none;
+            transform: none; }
   .modal__content--login {
     max-width: 430px;
     margin-top: 80px; }
@@ -3988,6 +4013,11 @@ ul.catalog__form-list--pice {
     margin-left: 25px;
     -webkit-box-shadow: 0 4px 32px rgba(121, 121, 121, 0.24);
             box-shadow: 0 4px 32px rgba(121, 121, 121, 0.24); }
+  .modal__content--filter-no-js {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    margin-left: auto;
+    margin-right: auto; }
   .modal__content--login svg {
     width: 20px;
     height: 20px; }
@@ -4006,8 +4036,6 @@ ul.catalog__form-list--pice {
     z-index: 30; } }
 
 @media (max-width: 767px) {
-  .modal--filter {
-    overflow-y: scroll; }
   .modal--cart {
     padding-left: 15px;
     padding-right: 15px; }

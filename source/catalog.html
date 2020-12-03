@@ -113,9 +113,9 @@
             <div class="catalog__form-wrapper">
               <button class="catalog__form-button" type="button">Filter</button>
 
-              <div class="modal modal--filter">
-                <div class="modal__content modal__content--filter">
-                  <form class="catalog__form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="modal modal--filter modal--filter-no-js">
+                <div class="modal__content modal__content--filter modal__content--filter-no-js">
+                  <form class="catalog__form catalog__form--no-js" action="https://echo.htmlacademy.ru" method="post">
                     <ul class="catalog__form-group catalog__form-product">
                       <li class="catalog__form-item">
                         <a class="catalog__form-link catalog__form-link--opened">
@@ -162,7 +162,7 @@
                         </ul>
                       </li>
                       <li class="catalog__form-item">
-                        <a class="catalog__form-link">
+                        <a class="catalog__form-link catalog__form-link--opened-no-js">
                           <span>
                             Material
                           </span>
@@ -182,7 +182,7 @@
                           <li>
                             <label class="field-checkbox">
                               <input class="field-checkbox__input visually-hidden" type="checkbox"
-                                name="material-silver" id="material-silver" disabled>
+                                name="material-silver" id="material-silver">
                               <span class="field-checkbox__indicator"></span>
                               <span class="field-checkbox__label">Silver</span>
                             </label>
@@ -190,7 +190,7 @@
                         </ul>
                       </li>
                       <li class="catalog__form-item">
-                        <a class="catalog__form-link">
+                        <a class="catalog__form-link catalog__form-link--opened-no-js">
                           <span>
                             Collection
                           </span>
@@ -256,7 +256,7 @@
                     <div class="catalog__form-reset">
                       <button type="reset">Clear All</button>
                     </div>
-                    <div class="catalog__form-close">
+                    <div class="catalog__form-close catalog__form-close--no-js">
                       <button type="button">
                         <span class="visually-hidden">Close filter</span>
                         <svg class="closeFilterSvg" width="32" height="32">

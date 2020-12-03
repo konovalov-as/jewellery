@@ -86,11 +86,21 @@
 
 @media (max-width: $tablet-width-only) {
   .modal--filter {
+    overflow-y: scroll;
     background-color: white;
     opacity: 0;
     visibility: hidden;
     position: fixed;
     transform: scaleX(1.1) scaleY(1.1);
+  }
+
+  .modal--filter-no-js {
+    overflow-y: auto;
+    background-color: transparent;
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    transform: none;
   }
 
   .modal__content--login {
@@ -108,6 +118,12 @@
     box-shadow: 0 4px 32px rgba(121, 121, 121, 0.24);
   }
 
+  .modal__content--filter-no-js {
+    box-shadow: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .modal__content--login svg {
     width: 20px;
     height: 20px;
@@ -123,10 +139,6 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .modal--filter {
-    overflow-y: scroll;
-  }
-
   .modal--cart {
     padding-left: 15px;
     padding-right: 15px;
