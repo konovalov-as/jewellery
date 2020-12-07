@@ -13,9 +13,9 @@
 
 <body class="body">
   <div class="wrapper">
-    <header class="page-header">
+    <header class="page-header page-header--bg-no-js">
       <div class="page-header__wrapper container">
-        <nav class="page-header__menu main-nav main-nav--closed about-us user-menu user-cart">
+        <nav class="page-header__menu main-nav main-nav--opened about-us user-menu user-cart">
           <div class="page-header__search search">
             <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
               <label>
@@ -113,12 +113,12 @@
             <div class="catalog__form-wrapper">
               <button class="catalog__form-button" type="button">Filter</button>
 
-              <div class="modal modal--filter">
-                <div class="modal__content modal__content--filter">
-                  <form class="catalog__form" action="https://echo.htmlacademy.ru" method="post">
+              <div class="modal modal--filter modal--filter-no-js">
+                <div class="modal__content modal__content--filter modal__content--filter-no-js">
+                  <form class="catalog__form catalog__form--no-js" action="https://echo.htmlacademy.ru" method="post">
                     <ul class="catalog__form-group catalog__form-product">
                       <li class="catalog__form-item">
-                        <a class="catalog__form-link catalog__form-link--opened">
+                        <a href="#" class="catalog__form-link catalog__form-link--opened">
                           <span>
                             Product
                           </span>
@@ -158,7 +158,7 @@
                         </ul>
                       </li>
                       <li class="catalog__form-item">
-                        <a class="catalog__form-link">
+                        <a href="#" class="catalog__form-link catalog__form-link--opened-no-js">
                           <span>
                             Material
                           </span>
@@ -176,7 +176,7 @@
                           </li>
                           <li>
                             <label class="field-checkbox">
-                              <input class="field-checkbox__input visually-hidden" type="checkbox" name="material-silver" id="material-silver" disabled="">
+                              <input class="field-checkbox__input visually-hidden" type="checkbox" name="material-silver" id="material-silver">
                               <span class="field-checkbox__indicator"></span>
                               <span class="field-checkbox__label">Silver</span>
                             </label>
@@ -184,7 +184,7 @@
                         </ul>
                       </li>
                       <li class="catalog__form-item">
-                        <a class="catalog__form-link">
+                        <a href="#" class="catalog__form-link catalog__form-link--opened-no-js">
                           <span>
                             Collection
                           </span>
@@ -210,7 +210,7 @@
                         </ul>
                       </li>
                       <li class="catalog__form-item catalog__form-item--price">
-                        <a class="catalog__form-link catalog__form-link--opened">
+                        <a href="#" class="catalog__form-link catalog__form-link--price catalog__form-link--opened">
                           <span>
                             Price
                           </span>
@@ -248,7 +248,7 @@
                     <div class="catalog__form-reset">
                       <button type="reset">Clear All</button>
                     </div>
-                    <div class="catalog__form-close">
+                    <div class="catalog__form-close catalog__form-close--no-js">
                       <button type="button">
                         <span class="visually-hidden">Close filter</span>
                         <svg class="closeFilterSvg" width="32" height="32">
@@ -640,7 +640,7 @@
               <a href="#" tabindex="5">Sign up</a>
             </div>
           </form>
-          <button class="modal__close" type="button">
+          <button class="modal__close" type="button" tabindex="6">
             <span class="visually-hidden">Close</span>
             <svg width="14" height="14">
               <use xlink:href="img/sprite_auto.svg#icon-close-modal"></use>
