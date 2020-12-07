@@ -18,16 +18,20 @@
         <nav class="page-header__menu main-nav main-nav--opened about-us user-menu user-cart">
           <div class="page-header__search search">
             <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
-              <label>
-                <span class="visually-hidden">Search the website</span>
-                <input type="text" name="search" id="search" placeholder="Type here to search" required>
-              </label>
-              <button type="submit">
-                <span class="visually-hidden">Search</span>
-                <svg width="14" height="14">
-                  <use xlink:href="img/sprite_auto.svg#icon-search"></use>
-                </svg>
-              </button>
+              <div class="search__fields">
+                <div class="search__icon">
+                  <label for="search">
+                    <svg width="14" height="14">
+                      <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+                    </svg>
+                  </label>
+                </div>
+                <label>
+                  <span class="visually-hidden">Search the website</span>
+                  <input type="text" name="search" id="search" placeholder="Type here to search" required>
+                </label>
+              </div>
+              <button class="visually-hidden" type="submit">Search</button>
             </form>
           </div>
           <a class="page-header__logo page-header__logo--page">
@@ -594,7 +598,8 @@
               <a href="#" class="faq__arrow-link" aria-label="Открыть-закрыть ответ">
                 <div class="faq__inner">
                   <div class="faq__inner-2">
-                    <span class="faq__question faq__question--return">Can I&nbsp;return the jewellery if&nbsp;it&nbsp;didn&rsquo;t fit&nbsp;me?</span>
+                    <span class="faq__question faq__question--return">Can I&nbsp;return the jewellery
+                      if&nbsp;it&nbsp;didn&rsquo;t fit&nbsp;me?</span>
                     <p class="faq__answer">
                       Our jewellerry is made of solid gold, silver or leather. Also, some jewellery contains precious
                       and semiprecious stones and crystals.
