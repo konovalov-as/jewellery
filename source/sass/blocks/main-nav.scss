@@ -59,12 +59,12 @@
     padding-left: 0;
     padding-right: 0;
     transform: translateX(0);
-    margin-bottom: 22px;
+    margin-bottom: 10px;
   }
 
   .main-nav__item {
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 11px;
   }
 
   .main-nav__link {
@@ -84,6 +84,10 @@
 }
 
 @media (max-width: $mobile-width-only) {
+  .main-nav--opened {
+    height: auto;
+  }
+
   .main-nav__list {
     display: none;
   }

@@ -205,8 +205,8 @@
   }
 
   .page-header--bg .search__form {
-    margin-top: 34px;
-    margin-bottom: 38px;
+    margin-top: 21px;
+    margin-bottom: 25px;
   }
 
   .page-header__logo {
@@ -261,6 +261,15 @@
 
   .page-header__search {
     grid-column: 1 / span 5;
+  }
+
+  .page-header--bg .search__form {
+    margin-top: 24px;
+    margin-bottom: 25px;
+  }
+
+  .page-header--bg .page-header__menu {
+    padding-bottom: 42px;
   }
 
   .page-header__logo {

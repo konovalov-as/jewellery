@@ -130,7 +130,7 @@
 
 .new__slider-prev-button--new-in {
   top: 36px;
-  left: 80px;
+  left: 82px;
   width: 40px;
 }
 
@@ -142,6 +142,11 @@
 
 .new__slider-prev-button--new-in svg {
   width: 40px;
+}
+
+.new__slider-prev-button--shop {
+  left: 46px;
+  top: 41px;
 }
 
 .new__slider-next-button svg {
@@ -176,12 +181,14 @@
     height: 15px;
   }
 
-  .new__slider-prev-button {
-    left: 45px;
+  .new__slider-next-button {
+    top: 42px;
+    right: 45px;
   }
 
-  .new__slider-next-button {
-    right: 45px;
+  .new__slider-prev-button--new-in {
+    top: 42px;
+    left: 43px;
   }
 }
 
