@@ -1112,10 +1112,10 @@ input[type="radio"].visually-hidden {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url("../img/bg-hero-desktop-index@1x.jpg"); }
+  background-image: url("../img/bg-hero-desktop-index@1x.jpeg"); }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .page-hero {
-      background-image: url("../img/bg-hero-desktop-index@2x.jpg"); } }
+      background-image: url("../img/bg-hero-desktop-index@2x.jpeg"); } }
 
 .page-hero--catalog {
   min-height: 261px;
@@ -3549,10 +3549,10 @@ ul.catalog__form-list--pice {
   background-repeat: no-repeat;
   background-position: center top;
   background-color: #f0eae4;
-  background-image: url("../img/bg-decoration-desktop@1x.jpg"); }
+  background-image: url("../img/bg-decoration-desktop@1x.jpeg"); }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .login__wrapper {
-      background-image: url("../img/bg-decoration-desktop@2x.jpg"); } }
+      background-image: url("../img/bg-decoration-desktop@2x.jpeg"); } }
 
 .login__title {
   font-family: "Cormorant Garamond", "Georgia", serif;
