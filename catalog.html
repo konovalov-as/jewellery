@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Online shopping jewellery">
+  <meta name="Keywords" content="Jewellery, wedding, engagement rings, necklaces, earrings, bracelets, body jewelry">
+  <title>Chjewellery - Online shopping jewellery made to be yours | Catalog</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="body">
+  <div class="wrapper">
+    <header class="page-header page-header--bg-no-js">
+      <div class="page-header__wrapper container">
+        <nav class="page-header__menu main-nav main-nav--opened about-us user-menu user-cart">
+          <div class="page-header__search search">
+            <form class="search__form" action="https://echo.htmlacademy.ru" method="post">
+              <label>
+                <span class="visually-hidden">Search the website</span>
+                <input type="text" name="search" id="search" placeholder="Type here to search" required="">
+              </label>
+              <button type="submit">
+                <span class="visually-hidden">Search</span>
+                <svg width="14" height="14">
+                  <use xlink:href="img/sprite_auto.svg#icon-search"></use>
+                </svg>
+              </button>
+            </form>
+          </div>
+          <a class="page-header__logo" href="index.html">
+            <span class="visually-hidden">Chjewellery - The Jewellery Store</span>
+            <svg class="page-header__svg-logo" width="66" height="66">
+              <use xlink:href="img/sprite_auto.svg#logo"></use>
+            </svg>
+          </a>
+          <button class="page-header__menu-toggle main-menu-toggle" type="button">
+            <span class="visually-hidden">Open the main menu</span>
+            <span class="main-menu-toggle__icon">
+              <svg class="main-menu-toggle__svg-icon" width="25" height="16">
+                <use xlink:href="img/sprite_auto.svg#icon-toggle-menu"></use>
+              </svg>
+            </span>
+          </button>
+
+          <ul class="page-header__list page-header__list--nav main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">What’s new</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Chokers</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="product.html">Necklaces</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Rings</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Earrings</a>
+            </li>
+          </ul>
+
+          <ul class="page-header__list page-header__list--about-us about-us__list about-us__list--desktop">
+            <li class="about-us__item">
+              <a class="about-us__link" href="#">About CH</a>
+            </li>
+            <li class="about-us__item">
+              <a class="about-us__link" href="#">Stores & Hours</a>
+            </li>
+            <li class="about-us__item">
+              <a class="about-us__link" href="#">Contact Us</a>
+            </li>
+          </ul>
+
+          <ul class="page-header__list page-header__list--user-menu user-menu__list">
+            <li class="user-menu__item">
+              <a class="user-menu__link user-menu__link--login" href="#">Login</a>
+            </li>
+          </ul>
+
+          <ul class="page-header__list page-header__list--user-cart user-cart__list">
+            <li class="user-menu__item">
+              <a class="user-menu__link" href="#" aria-label="User cart">
+                <span class="user-menu__link-label">Cart</span>
+                <span class="user-menu__link-value">0</span>
+                <svg class="user-menu__icon" width="18" height="16">
+                  <use xlink:href="img/sprite_auto.svg#icon-cart"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </header>
+
+    <main class="page-main">
+      <h1 class="visually-hidden">Chjewellery - Online shopping jewellery | Catalog</h1>
+
+      <section class="page-hero page-hero--catalog container">
+        <h2 class="title-h2 title-h2--catalog">all jewellery</h2>
+        <p class="page-hero__slogan page-hero__slogan--catalog">Discover picks of fashion's finest trends in our
+          jewellery catalog</p>
+      </section>
+
+      <section class="catalog">
+        <h2 class="visually-hidden">Catalog page</h2>
+        <div class="catalog__wrapper container">
+          <div class="catalog__left">
+            <div class="catalog__form-wrapper">
+              <button class="catalog__form-button" type="button">Filter</button>
+
+              <div class="modal modal--filter modal--filter-no-js">
+                <div class="modal__content modal__content--filter modal__content--filter-no-js">
+                  <form class="catalog__form catalog__form--no-js" action="https://echo.htmlacademy.ru" method="post">
+                    <ul class="catalog__form-group catalog__form-product">
+                      <li class="catalog__form-item">
+                        <a href="#" class="catalog__form-link catalog__form-link--opened">
+                          <span>
+                            Product
+                          </span>
+                          <svg width="15" height="8">
+                            <use xlink:href="img/sprite_auto.svg#icon-accordion-arrow"></use>
+                          </svg>
+                        </a>
+                        <ul>
+                          <li>
+                            <label class="field-checkbox">
+                              <input class="field-checkbox__input visually-hidden" type="checkbox" name="product-necklaces" id="product-necklaces" checked="">
+                              <span class="field-checkbox__indicator"></span>
+                              <span class="field-checkbox__label">Necklaces</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="field-checkbox">
+                              <input class="field-checkbox__input visually-hidden" type="checkbox" name="product-chokers" id="product-chokers" checked="">
+                              <span class="field-checkbox__indicator"></span>
+                              <span class="field-checkbox__label">Chokers</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="field-checkbox">
+                              <input class="field-checkbox__input visually-hidden" type="checkbox" name="product-rings" id="product-rings">
+                              <span class="field-checkbox__indicator"></span>
+                              <span class="field-checkbox__label">Rings</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="field-checkbox">
+                              <input class="field-checkbox__input visually-hidden" type="checkbox" name="product-earrings" id="product-earrings" checked="">
+                              <span class="field-checkbox__indicator"></span>
+                              <span class="field-checkbox__label">Earrings</span>
+                            </label>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="catalog__form-item">
+                        <a href="#" class="catalog__form-link catalog__form-link--opened-no-js">
+                          <span>
+                            Material
+                          </span>
+                          <svg width="15" height="8">
+                            <use xlink:href="img/sprite_auto.svg#icon-accordion-arrow"></use>
+                          </svg>
+                        </a>
+                        <ul class="catalog__form-list catalog__form-list--js">
+                          <li>
+                            <label class="field-checkbox">
+                              <input class="field-checkbox__input visually-hidden" type="checkbox" name="material-gold" id="material-gold" checked="">
+                              <span class="field-checkbox__indicator"></span>
+                              <span class="field-checkbox__label">Gold</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="field-checkbox">
+                              <input class="field-checkbox__input visually-hidden" type="checkbox" name="material-silver" id="material-silver">
+                              <span class="field-checkbox__indicator"></span>
+                              <span class="field-checkbox__label">Silver</span>
+                            </label>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="catalog__form-item">
+                        <a href="#" class="catalog__form-link catalog__form-link--opened-no-js">
+                          <span>
+                            Collection
+                          </span>
+                          <svg width="15" height="8">
+                            <use xlink:href="img/sprite_auto.svg#icon-accordion-arrow"></use>
+                          </svg>
+                        </a>
+                        <ul class="catalog__form-list catalog__form-list--js">
+                          <li>
+                            <label class="field-checkbox">
+                              <input class="field-checkbox__input visually-hidden" type="checkbox" name="collection-pink-flamingo" id="collection-pink-flamingo">
+                              <span class="field-checkbox__indicator"></span>
+                              <span class="field-checkbox__label">Pink flamingo</span>
+                            </label>
+                          </li>
+                          <li>
+                            <label class="field-checkbox">
+                              <input class="field-checkbox__input visually-hidden" type="checkbox" name="collection-dreams" id="collection-dreams">
+                              <span class="field-checkbox__indicator"></span>
+                              <span class="field-checkbox__label">Dreams</span>
+                            </label>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="catalog__form-item catalog__form-item--price">
+                        <a href="#" class="catalog__form-link catalog__form-link--price catalog__form-link--opened">
+                          <span>
+                            Price
+                          </span>
+                          <svg width="15" height="8">
+                            <use xlink:href="img/sprite_auto.svg#icon-accordion-arrow"></use>
+                          </svg>
+                        </a>
+                        <ul class="catalog__form-list catalog__form-list--pice">
+                          <li>
+                            <div class="range-filter">
+                              <div class="range-filter__controls">
+                                <div class="range-filter__scale">
+                                  <div class="range-filter__bar"></div>
+                                </div>
+                                <div class="range-filter__toggle range-filter__toggle-min"></div>
+                                <div class="range-filter__toggle range-filter__toggle-max"></div>
+                              </div>
+                              <div class="range-filter__price-controls">
+                                <label class="range-filter__min-price">$
+                                  <input class="no-arrow" name="min-price" type="number" placeholder="55" min="0">
+                                </label>
+                                <label class="range-filter__max-price">$
+                                  <input class="no-arrow" name="max-price" type="number" placeholder="155" min="0">
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+
+                    <div class="catalog__form-submit">
+                      <button type="submit">Apply</button>
+                    </div>
+                    <div class="catalog__form-reset">
+                      <button type="reset">Clear All</button>
+                    </div>
+                    <div class="catalog__form-close catalog__form-close--no-js">
+                      <button type="button">
+                        <span class="visually-hidden">Close filter</span>
+                        <svg class="closeFilterSvg" width="32" height="32">
+                          <use xlink:href="img/sprite_auto.svg#icon-close-filter"></use>
+                        </svg>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <div class="catalog__right card">
+            <ul class="catalog__list card__list">
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-1-mobile@1x.webp 1x, img/card-item-1-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-1-tablet@1x.webp 1x, img/card-item-1-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-1-desktop@1x.webp 1x, img/card-item-1-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-1-mobile@1x.jpg 1x, img/card-item-1-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-1-tablet@1x.jpg 1x, img/card-item-1-tablet@2x.jpg 2x">
+                      <img src="img/card-item-1-desktop@1x.jpg" srcset="img/card-item-1-desktop@2x.jpg 2x" alt="Double pearl earrings" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Double pearl earrings</p>
+                  <span class="card__price">$ 115</span>
+                </a>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-2-mobile@1x.webp 1x, img/card-item-2-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-2-tablet@1x.webp 1x, img/card-item-2-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-2-desktop@1x.webp 1x, img/card-item-2-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-2-mobile@1x.jpg 1x, img/card-item-2-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-2-tablet@1x.jpg 1x, img/card-item-2-tablet@2x.jpg 2x">
+                      <img src="img/card-item-2-desktop@1x.jpg" srcset="img/card-item-2-desktop@2x.jpg 2x" alt="Choker with gold bead" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Choker with gold bead</p>
+                  <span class="card__price">$ 55</span>
+                </a>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-3-mobile@1x.webp 1x, img/card-item-3-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-3-tablet@1x.webp 1x, img/card-item-3-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-3-desktop@1x.webp 1x, img/card-item-3-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-3-mobile@1x.jpg 1x, img/card-item-3-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-3-tablet@1x.jpg 1x, img/card-item-3-tablet@2x.jpg 2x">
+                      <img src="img/card-item-3-desktop@1x.jpg" srcset="img/card-item-3-desktop@2x.jpg 2x" alt="Gold layered necklace" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Gold layered necklace</p>
+                  <span class="card__price">$ 155</span>
+                </a>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-4-mobile@1x.webp 1x, img/card-item-4-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-4-tablet@1x.webp 1x, img/card-item-4-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-4-desktop@1x.webp 1x, img/card-item-4-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-4-mobile@1x.jpg 1x, img/card-item-4-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-4-tablet@1x.jpg 1x, img/card-item-4-tablet@2x.jpg 2x">
+                      <img src="img/card-item-4-desktop@1x.jpg" srcset="img/card-item-4-desktop@2x.jpg 2x" alt="Blue gemstone pendant" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Blue gemstone pendant</p>
+                  <span class="card__price">$ 105</span>
+                </a>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-5-mobile@1x.webp 1x, img/card-item-5-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-5-tablet@1x.webp 1x, img/card-item-5-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-5-desktop@1x.webp 1x, img/card-item-5-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-5-mobile@1x.jpg 1x, img/card-item-5-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-5-tablet@1x.jpg 1x, img/card-item-5-tablet@2x.jpg 2x">
+                      <img src="img/card-item-5-desktop@1x.jpg" srcset="img/card-item-5-desktop@2x.jpg 2x" alt="Boho earrings" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Boho earrings</p>
+                  <span class="card__price">$ 75</span>
+                </a>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-6-mobile@1x.webp 1x, img/card-item-6-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-6-tablet@1x.webp 1x, img/card-item-6-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-6-desktop@1x.webp 1x, img/card-item-6-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-6-mobile@1x.jpg 1x, img/card-item-6-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-6-tablet@1x.jpg 1x, img/card-item-6-tablet@2x.jpg 2x">
+                      <img src="img/card-item-6-desktop@1x.jpg" srcset="img/card-item-6-desktop@2x.jpg 2x" alt="Boho earrings" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Gold bird necklace</p>
+                  <span class="card__price">$ 135</span>
+                </a>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-7-mobile@1x.webp 1x, img/card-item-7-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-7-tablet@1x.webp 1x, img/card-item-7-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-7-desktop@1x.webp 1x, img/card-item-7-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-7-mobile@1x.jpg 1x, img/card-item-7-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-7-tablet@1x.jpg 1x, img/card-item-7-tablet@2x.jpg 2x">
+                      <img src="img/card-item-7-desktop@1x.jpg" srcset="img/card-item-7-desktop@2x.jpg 2x" alt="Black leather choker" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Black leather choker</p>
+                  <span class="card__price">$ 85</span>
+                </a>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-8-mobile@1x.webp 1x, img/card-item-8-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-8-tablet@1x.webp 1x, img/card-item-8-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-8-desktop@1x.webp 1x, img/card-item-8-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-8-mobile@1x.jpg 1x, img/card-item-8-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-8-tablet@1x.jpg 1x, img/card-item-8-tablet@2x.jpg 2x">
+                      <img src="img/card-item-8-desktop@1x.jpg" srcset="img/card-item-8-desktop@2x.jpg 2x" alt="Necklace with amethyst" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Necklace with amethyst</p>
+                  <span class="card__price">$ 145</span>
+                </a>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-9-mobile@1x.webp 1x, img/card-item-9-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-9-tablet@1x.webp 1x, img/card-item-9-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-9-desktop@1x.webp 1x, img/card-item-9-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-9-mobile@1x.jpg 1x, img/card-item-9-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-9-tablet@1x.jpg 1x, img/card-item-9-tablet@2x.jpg 2x">
+                      <img src="img/card-item-9-desktop@1x.jpg" srcset="img/card-item-9-desktop@2x.jpg 2x" alt="Elephant earrings" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Elephant earrings</p>
+                  <span class="card__price">$ 95</span>
+                </a>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-10-mobile@1x.webp 1x, img/card-item-10-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-10-tablet@1x.webp 1x, img/card-item-10-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-10-desktop@1x.webp 1x, img/card-item-10-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-10-mobile@1x.jpg 1x, img/card-item-10-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-10-tablet@1x.jpg 1x, img/card-item-10-tablet@2x.jpg 2x">
+                      <img src="img/card-item-10-desktop@1x.jpg" srcset="img/card-item-10-desktop@2x.jpg 2x" alt="Threader necklace" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Threader necklace</p>
+                  <span class="card__price">$ 115</span>
+                </a>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-11-mobile@1x.webp 1x, img/card-item-11-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-11-tablet@1x.webp 1x, img/card-item-11-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-11-desktop@1x.webp 1x, img/card-item-11-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-11-mobile@1x.jpg 1x, img/card-item-11-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-11-tablet@1x.jpg 1x, img/card-item-11-tablet@2x.jpg 2x">
+                      <img src="img/card-item-11-desktop@1x.jpg" srcset="img/card-item-11-desktop@2x.jpg 2x" alt="Origami crane necklace" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Origami crane necklace</p>
+                  <span class="card__price">$ 105</span>
+                </a>
+              </li>
+              <li class="card__item">
+                <a class="card__link" href="#">
+                  <div class="card__image">
+                    <!-- 1х: 570px; 2x: 1140px -->
+                    <!-- 1х: 339px; 2x: 678px -->
+                    <!-- 1х: 290px; 2x: 580px -->
+                    <picture>
+                      <source type="image/webp" media="(max-width: 767px)" srcset="img/card-item-12-mobile@1x.webp 1x, img/card-item-12-mobile@2x.webp 2x">
+                      <source type="image/webp" media="(max-width: 1023px)" srcset="img/card-item-12-tablet@1x.webp 1x, img/card-item-12-tablet@2x.webp 2x">
+                      <source type="image/webp" srcset="img/card-item-12-desktop@1x.webp 1x, img/card-item-12-desktop@2x.webp 2x">
+                      <source media="(max-width: 767px)" srcset="img/card-item-12-mobile@1x.jpg 1x, img/card-item-12-mobile@2x.jpg 2x">
+                      <source media="(max-width: 1023px)" srcset="img/card-item-12-tablet@1x.jpg 1x, img/card-item-12-tablet@2x.jpg 2x">
+                      <img src="img/card-item-12-desktop@1x.jpg" srcset="img/card-item-12-desktop@2x.jpg 2x" alt="Marble earrings" width="270" height="272">
+                    </picture>
+                  </div>
+                  <p class="card__label">Marble earrings</p>
+                  <span class="card__price">$ 95</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="catalog__pagination pagination">
+          <div class="pagination__wrapper container">
+            <a class="pagination__link pagination__prev" href="#">Previous</a>
+            <ul class="pagination__list">
+              <li class="pagination__item">
+                <a class="pagination__page pagination__page--current" href="#">1</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__page pagination__page--curent" href="#">2</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__page pagination__page--curent" href="#">3</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__page pagination__page--curent" href="#">4</a>
+              </li>
+              <li class="pagination__item">
+                <a class="pagination__page pagination__page--curent" href="#">5</a>
+              </li>
+            </ul>
+            <a class="pagination__link pagination__next" href="#">Next</a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper container">
+        <div class="page-footer__left">
+          <p class="page-footer__title">The good stuff in your inbox </p>
+          <p class="page-footer__description">News and updates from CH. No spam, we promise.</p>
+          <form class="sign-up-form" action="https://echo.htmlacademy.ru" method="post">
+            <label>
+              <span class="visually-hidden"></span>
+              <input type="email" name="email" id="email" placeholder="Your E-mail" required="">
+            </label>
+            <div class="sign-up-form__submit">
+              <button type="submit">
+                <span>Sign Up</span>
+                <svg width="29" height="9">
+                  <use xlink:href="img/sprite_auto.svg#icon-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="page-footer__right social">
+          <ul class="page-footer__list-1">
+            <li class="page-footer__item-1">
+              <a class="page-footer__link-1" href="#">Ordering & Payment</a>
+            </li>
+            <li class="page-footer__item-1">
+              <a class="page-footer__link-1" href="#">Terms & Conditions</a>
+            </li>
+            <li class="page-footer__item-1">
+              <a class="page-footer__link-1" href="#">Returns & Exchanges</a>
+            </li>
+            <li class="page-footer__item-1">
+              <a class="page-footer__link-1" href="#">Delivery</a>
+            </li>
+          </ul>
+          <ul class="page-footer__list-2">
+            <li class="page-footer__item-2">
+              <a class="page-footer__link-2" href="#">About CH</a>
+            </li>
+            <li class="page-footer__item-2">
+              <a class="page-footer__link-2" href="#">Stores & Hours</a>
+            </li>
+            <li class="page-footer__item-2">
+              <a class="page-footer__link-2" href="#">Jobs</a>
+            </li>
+            <li class="page-footer__item-2">
+              <a class="page-footer__link-2" href="#">Contact Us</a>
+            </li>
+          </ul>
+          <ul class="page-footer__list-3 social__list">
+            <li class="social__item social__item--fb">
+              <a class="social__link" href="#">
+                <span class="social__label social__label--fb">Facebook</span>
+                <svg width="8" height="15">
+                  <use xlink:href="img/sprite_auto.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="social__label social__label--instagram">Instagram</span>
+                <svg width="15" height="15">
+                  <use xlink:href="img/sprite_auto.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="social__label social__label--pinterest">Pinterest</span>
+                <svg width="15" height="15">
+                  <use xlink:href="img/sprite_auto.svg#icon-pinterest"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link" href="#">
+                <span class="social__label social__label--twitter">Twitter</span>
+                <svg width="15" height="13">
+                  <use xlink:href="img/sprite_auto.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <section class="modal modal--login">
+      <h2 class="visually-hidden">Login modal</h2>
+      <div class="modal__content modal__content--login login">
+        <div class="login__wrapper">
+          <p class="login__title">Log In</p>
+          <form class="login__form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="login__form-field">
+              <div class="login__form-field-email">
+                <label>
+                  <span class="visually-hidden">Your E-mail</span>
+                  <input type="email" name="modal-email" id="modal-email" placeholder="Your E-mail" required="" tabindex="1">
+                </label>
+              </div>
+              <div class="login__form-field-password">
+                <label>
+                  <span class="visually-hidden">Your password</span>
+                  <input type="password" name="modal-password" id="modal-password" placeholder="Password" required="" tabindex="2">
+                </label>
+              </div>
+            </div>
+            <div class="login__form-forgot-pwd">
+              <a href="#" tabindex="4">Forgot your password?</a>
+            </div>
+            <div class="login__form-submit">
+              <button type="submit" tabindex="3">Log In</button>
+            </div>
+            <div class="login__form-sign-up">
+              <span>Don’t have an account?</span>
+              <a href="#" tabindex="5">Sign up</a>
+            </div>
+          </form>
+          <button class="modal__close" type="button" tabindex="6">
+            <span class="visually-hidden">Close</span>
+            <svg width="14" height="14">
+              <use xlink:href="img/sprite_auto.svg#icon-close-modal"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Различные библиотеки -->
+  <script src="js/vendor.js"></script>
+
+  <script>svg4everybody(); // run it now or whenever you are ready</script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
