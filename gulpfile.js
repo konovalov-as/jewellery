@@ -90,7 +90,7 @@ gulp.task("refresh", function (done) {
 });
 
 gulp.task("images", function () {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src("source/img/**/*.{png,jpg,jpeg,svg}")
     .pipe(imagemin([
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.jpegtran({ progressive: true }),
@@ -100,7 +100,7 @@ gulp.task("images", function () {
 });
 
 gulp.task("webp", function () {
-  return gulp.src("build/img/**/*.{png,jpg}")
+  return gulp.src("build/img/**/*.{png,jpg,jpeg}")
     .pipe(webp({ quality: 90 }))
     .pipe(gulp.dest("build/img"));
 });

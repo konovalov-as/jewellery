@@ -8,10 +8,10 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url("../img/bg-hero-desktop-index@1x.jpg");
+  background-image: url("../img/bg-hero-desktop-index@1x.jpeg");
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/bg-hero-desktop-index@2x.jpg");
+    background-image: url("../img/bg-hero-desktop-index@2x.jpeg");
   }
 }
 
