@@ -84,10 +84,6 @@
 }
 
 @media (max-width: $mobile-width-only) {
-  .main-nav--opened {
-    height: auto;
-  }
-
   .main-nav__list {
     display: none;
   }

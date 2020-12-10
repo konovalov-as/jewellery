@@ -85,6 +85,10 @@
 }
 
 @media (max-width: $tablet-width-only) {
+  .modal--open .page-header {
+    overflow-y: scroll;
+  }
+
   .modal--filter {
     overflow-y: scroll;
     background-color: white;
